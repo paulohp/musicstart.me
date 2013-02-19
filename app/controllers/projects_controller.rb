@@ -41,7 +41,7 @@ class ProjectsController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    @project = Project.new(params[:task])
+    @project = Project.new(params[:project])
 
     respond_to do |format|
       if @project.save
@@ -60,7 +60,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
 
     respond_to do |format|
-      if @project.update_attributes(params[:task])
+      if @project.update_attributes(params[:project])
         format.html { redirect_to @project, notice: 'Task was successfully updated.' }
         format.json { head :no_content }
       else

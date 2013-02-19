@@ -7,8 +7,9 @@ MusicstartmeApp::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   devise_for :users
-  resources :users
-  resources :projects
+  resources :users do
+    resources :projects
+  end
   get "pages/index"
 
   # The priority is based upon order of creation:

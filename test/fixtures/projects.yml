@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  category: MyString
+  headline: MyString
+  decription: MyString
+  soundcloud_url: MyString
+  user_id: 1
+  price: MyString
+
+two:
+  name: MyString
+  category: MyString
+  headline: MyString
+  decription: MyString
+  soundcloud_url: MyString
+  user_id: 1
+  price: MyString

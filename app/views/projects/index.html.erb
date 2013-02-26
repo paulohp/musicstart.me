@@ -1,29 +1,23 @@
 <h1>Explorar</h1>
 
 <section>
-  <article>
-    <p>Name</p>
-    <p>Category</p>
-    <p>Headline</p>
-    <p>Decription</p>
-    <p>Soundcloud url</p>
-    <p>Price</p>
-  </article>
 
 <% @projects.each do |project| %>
-  <tr>
-    <td><%= project.name %></td>
-    <td><%= project.category %></td>
-    <td><%= project.headline %></td>
-    <td><%= project.decription %></td>
-    <td><%= project.soundcloud_url %></td>
-    <td><%= project.price %></td>
+  <article>
+    <header>
+      <h3><%= project.name %></h3>
+    </header>
+    <span><%= project.category %></span>
+    <span><%= project.headline %></span>
+    <span><%= project.decription %></span>
+    <span><%= project.soundcloud_url %></span>
+    <span><%= project.price %></span>
     <% if project.user_id == current_user.id %>
-      <td><%= link_to 'Show', project %></td>
-      <td><%= link_to 'Edit', edit_project_pap(project) %></td>
-      <td><%= link_to 'Destroy', project, mepod: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <button><%= link_to 'Show', project %></button>
+      <button><%= link_to 'Edit', edit_project_pap(project) %></button>
+      <button><%= link_to 'Destroy', project, mepod: :delete, data: { confirm: 'Are you sure?' } %></button>
     <% end %>
-  </tr>
+  </article>
 <% end %>
 </section>
 

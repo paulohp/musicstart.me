@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
   # GET /tasks/new
   # GET /tasks/new.json
   def new
-    @project = Project.new
+    @project = current_user.projects.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,7 +35,7 @@ class ProjectsController < ApplicationController
 
   # GET /tasks/1/edit
   def edit
-    @project = Project.find(params[:id])
+    @project = current_user.projects.find(params[:id])
   end
 
   # POST /tasks
@@ -57,7 +57,7 @@ class ProjectsController < ApplicationController
   # PUT /tasks/1
   # PUT /tasks/1.json
   def update
-    @project = Project.find(params[:id])
+    @project = current.projects.find(params[:id])
 
     respond_to do |format|
       if @project.update_attributes(params[:project])
@@ -73,11 +73,11 @@ class ProjectsController < ApplicationController
   # DELETE /tasks/1
   # DELETE /tasks/1.json
   def destroy
-    @project = Project.find(params[:id])
+    @project = current_user.projects.find(params[:id])
     @project.destroy
 
     respond_to do |format|
-      format.html { redirect_to tasks_url }
+      format.html { redirect_to projects_url }
       format.json { head :no_content }
     end
   end

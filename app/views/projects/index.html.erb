@@ -1,18 +1,14 @@
-<h1>Listing projects</h1>
+<h1>Explorar</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Category</th>
-    <th>Headline</th>
-    <th>Decription</th>
-    <th>Soundcloud url</th>
-    <th>User</th>
-    <th>Price</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<section>
+  <article>
+    <p>Name</p>
+    <p>Category</p>
+    <p>Headline</p>
+    <p>Decription</p>
+    <p>Soundcloud url</p>
+    <p>Price</p>
+  </article>
 
 <% @projects.each do |project| %>
   <tr>
@@ -21,15 +17,16 @@
     <td><%= project.headline %></td>
     <td><%= project.decription %></td>
     <td><%= project.soundcloud_url %></td>
-    <td><%= project.user_id %></td>
     <td><%= project.price %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% if project.user_id == current_user.id %>
+      <td><%= link_to 'Show', project %></td>
+      <td><%= link_to 'Edit', edit_project_pap(project) %></td>
+      <td><%= link_to 'Destroy', project, mepod: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
-</table>
+</section>
 
 <br />
 
-<%= link_to 'New Project', new_project_path %>
+<%= link_to 'New Project', new_project_pap %>

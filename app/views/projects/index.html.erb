@@ -1,26 +1,39 @@
-<h1>Explorar</h1>
+<h3>Explorar</h3>
 
-<section>
+<section class="projects">
 
 <% @projects.each do |project| %>
-  <article>
+  <div class="four columns">
     <header>
-      <h3><%= project.name %></h3>
+      <h4><%= project.name %></h4>
     </header>
-    <span><%= project.category %></span>
-    <span><%= project.headline %></span>
-    <span><%= project.decription %></span>
-    <span><%= project.soundcloud_url %></span>
-    <span><%= project.price %></span>
-    <% if project.user_id == current_user.id %>
-      <button><%= link_to 'Show', project %></button>
-      <button><%= link_to 'Edit', edit_project_pap(project) %></button>
-      <button><%= link_to 'Destroy', project, mepod: :delete, data: { confirm: 'Are you sure?' } %></button>
-    <% end %>
-  </article>
+    <article>
+      <label>Categoria:</label>
+      <span><%= project.category %></span>
+      <label>Porque:</label>
+      <span><%= project.headline %></span>
+      <label>Descrição:</label>
+      <span><%= project.decription %></span>
+      <label>Soundcloud</label>
+      <span><%= project.soundcloud_url %></span>
+      <label>Objetivo:</label>
+      <span><%= project.price %></span>
+      <% if project.user_id == current_user.id %>
+        <button>
+          <%= link_to 'Show', project %>
+        </button>
+        <button>
+          <%= link_to 'Edit', edit_project_path(project) %>
+        </button>
+        <button>
+          <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </button>
+      <% end %>
+    </article>
+  </div>
 <% end %>
 </section>
 
 <br />
 
-<%= link_to 'New Project', new_project_pap %>
+<%= link_to 'New Project', new_project_path %>

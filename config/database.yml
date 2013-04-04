@@ -4,8 +4,12 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: sqlite3
-  database: db/musicstartapp_dev.sqlite3
+  adapter: postgresql
+  database: musicstartapp_dev
+  username: paulo
+  password: "98912849"
+  pool: 5
+  timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

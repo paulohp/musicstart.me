@@ -1,10 +1,12 @@
 <%= image_tag avatar_url(@user) %><br>
 <%= @user.email %><br>
-<% @projects.each do |project| %>
-  <label>Projeto:</label><br>
-  <%= project.name %><br>
-  <label>SoundCloud:</label><br>
-  <%= project.soundcloud_url %><br>
-  <label>Categoria:</label><br>
-  <%= project.category %><br>
-<% end %>
+<div id="projects">
+  <% @projects.each do |project| %>
+    <label>Projeto:</label><br>
+    <%= project.name %><br>
+    <label>SoundCloud:</label><br>
+    <%= project.soundcloud_url %><br>
+    <label>Categoria:</label><br>
+    <%= project.category %><br>
+  <% end %>
+</div>

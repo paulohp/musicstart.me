@@ -1,42 +1,49 @@
-<%= form_for(@project) do |f| %>
-  <% if @project.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+<section class="seven columns">
+  <%= form_for(@project) do |f| %>
+    <% if @project.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
 
-      <ul>
-      <% @project.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @project.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field row">
+      <%= f.label :name %>
+      <%= f.text_field :name, :class => "text" %>
+    </div>
+    <div class="field row">
+      <%= f.label :category %>
+      <%= f.text_field :category, :class => "text" %>
+    </div>
+    <div class="field row">
+      <%= f.label :headline %>
+      <%= f.text_field :headline, :class => "text" %>
+    </div>
+    <div class="field row">
+      <%= f.label :decription %>
+      <%= f.text_field :decription, :class => "text" %>
+    </div>
+    <div class="field row">
+      <%= f.label :soundcloud_url %>
+      <%= f.text_field :soundcloud_url, :class => "text" %>
+    </div>
+    <div class="field row">
+      <%= f.label :price %>
+      <%= f.text_field :price, :class => "text" %>
+    </div>
+    <%= f.hidden_field :approved, :value => 0 %>
+    <div class="actions">
+      <p class="btn primary">
+        <%= submit_form "Criar Projeto","#new_project" %>
+      </p>
+      <p class="btn secondary">
+        <%= link_to 'Cancelar', projects_path %>
+      </p>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
-  </div>
-  <div class="field">
-    <%= f.label :headline %><br />
-    <%= f.text_field :headline %>
-  </div>
-  <div class="field">
-    <%= f.label :decription %><br />
-    <%= f.text_field :decription %>
-  </div>
-  <div class="field">
-    <%= f.label :soundcloud_url %><br />
-    <%= f.text_field :soundcloud_url %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
-  </div>
-  <%= f.hidden_field :approved, :value => 0 %>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</section>

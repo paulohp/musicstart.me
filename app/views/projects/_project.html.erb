@@ -1,0 +1,41 @@
+<div>
+  <% if user_signed_in? %>
+    <p class="btn tertiary">
+      <%= link_to 'Novo Projeto', new_project_path %>
+    </p>
+  <% end %>
+</div>
+<section id="projects">
+  <% @projects.each do |project| %>
+    <div class="project four columns">
+      <header>
+        <h4><%= project.name %></h4>
+      </header>
+      <article>
+        <label>Categoria:</label>
+        <span><%= project.category %></span>
+        <label>Porque:</label>
+        <span><%= project.headline %></span>
+        <label>Descrição:</label>
+        <span><%= project.decription %></span>
+        <label>Soundcloud</label>
+        <span><%= project.soundcloud_url %></span>
+        <label>Objetivo:</label>
+        <span><%= project.price %></span>
+        <div id="buttons">
+          <% if user_signed_in? && project.user_id == current_user.id %>
+            <p class="btn oval">
+              <%= link_to 'Mostrar', project %>
+            </p>
+            <p class="btn oval">
+              <%= link_to 'Editar', edit_project_path(project) %>
+            </p>
+            <p class="btn oval">
+              <%= link_to 'Deletar', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </p>
+          <% end %>
+        </div>
+      </article>
+    </div>
+  <% end %>
+</section>

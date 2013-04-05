@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+.navbar .logo{
+  font-size: 30px;
+  padding-left: 56px;
+  text-shadow: 1px 1px 3px #252525;
+  color: white;
+}

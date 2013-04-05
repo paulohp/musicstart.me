@@ -1,14 +1,3 @@
 <%= image_tag avatar_url(@user) %><br>
 <%= @user.email %><br>
-<section id="projects">
-  <% @projects.each do |project| %>
-    <article class="project four columns">
-      <label>Projeto:</label><br>
-      <%= project.name %><br>
-      <label>SoundCloud:</label><br>
-      <%= project.soundcloud_url %><br>
-      <label>Categoria:</label><br>
-      <%= project.category %><br>
-    </article>
-  <% end %>
-</section>
+<%= render 'projects/project' %>

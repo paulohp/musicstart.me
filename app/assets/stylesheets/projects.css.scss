@@ -19,3 +19,23 @@ form{
   box-shadow: 3px 1px 2px #f0f0f0;
   padding: 20px;
 }
+.status_bar{
+  background-color: white;
+  width: 202px;
+  height: 10px;
+  overflow: hidden;
+  border: 1px $minimal_gryn solid;
+  +border-radius(5px);
+  .progress{
+    +border-radius(4px);
+    background-color: $green;
+    height: 10px;
+    overflow: hidden;
+  }
+}
+.info_bar{
+  background: $dc_gryn;
+  float: left;
+  width: 210px;
+  padding: 5px 5px 10px;
+}

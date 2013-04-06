@@ -25,6 +25,11 @@
         <span><%= project.soundcloud_url %></span><br>
         <label><strong>Objetivo:</strong></label>
         <span><%= project.price %></span><br>
+        <div class="info_bar">
+          <div class="status_bar">
+            <div class="progress" style="width: 12%;"></div>
+          </div>
+        </div>
         <div id="buttons">
           <% if user_signed_in? && project.user_id == current_user.id %>
             <p class="btn small">

@@ -57,7 +57,7 @@ class ProjectsController < ApplicationController
   # PUT /tasks/1
   # PUT /tasks/1.json
   def update
-    @project = current.projects.find(params[:id])
+    @project = current_user.projects.find(params[:id])
 
     respond_to do |format|
       if @project.update_attributes(params[:project])

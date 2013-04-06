@@ -10,7 +10,7 @@
     <div class="box project four columns">
       <header>
         <div>
-          <%= image_tag(thumb_url) if has_picture? %>
+          <%= image_tag(project.image_url.thumb.url) if project.image_url %>
         </div>
         <h4><%= project.name %></h4>
       </header>

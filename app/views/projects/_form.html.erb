@@ -1,5 +1,5 @@
 <section class="seven columns">
-  <%= form_for(@project) do |f| %>
+  <%= form_for(@project), :multipart => true do |f| %>
     <% if @project.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -27,6 +27,10 @@
     <div class="field row">
       <%= f.label :decription %>
       <%= f.text_area :decription, :class => "textarea" %>
+    </div>
+    <div class="field row">
+      <%= f.label :image_tag %>
+      <%= f.file_field :image_tag %>
     </div>
     <div class="field row">
       <%= f.label :soundcloud_url %>

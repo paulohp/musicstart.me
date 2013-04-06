@@ -1,7 +1,15 @@
-<div>
+<div class="field row">
+  <p class="btn small oval">
+    <%= link_to "Editar Perfil", edit_user_path %>
+  </p>
+</div>
+<div class="field row" >
   <%= image_tag avatar_url(@user) %>
 </div>
-<div>
-  <%= @user.email %><br>
+<div class="field row">
+  <h4><%= @user.name %></h4>
+</div>
+<div class="field row">
+  <strong>e-mail: </strong><%= @user.email %>
 </div>
 <%= render 'projects/project' %>

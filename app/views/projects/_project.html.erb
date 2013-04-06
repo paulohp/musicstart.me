@@ -9,6 +9,9 @@
   <% @projects.each do |project| %>
     <div class="box project four columns">
       <header>
+        <div>
+          <%= image_tag(thumb_url) if has_picture? %>
+        </div>
         <h4><%= project.name %></h4>
       </header>
       <article>

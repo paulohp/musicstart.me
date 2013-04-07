@@ -3,4 +3,12 @@ class Project < ActiveRecord::Base
   attr_accessible :category, :decription, :headline, :name, :price, :soundcloud_url, :user_id, :approved, :image_url
 
   mount_uploader :image_url, ProjectPictureUploader
+
+  def self.status_progress
+    if successful?
+      "100%"
+    else
+      "8%"
+    end
+  end
 end

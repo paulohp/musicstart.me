@@ -41,7 +41,7 @@
                 </div>
               </li>
             <% else %>
-              <li><%= link_to "Sign up", new_user_registration_path %></li>
+              <li><%= link_to "Cadastre-se", new_user_registration_path %></li>
             <% end %>
             <li>
               <div class="field">
@@ -67,12 +67,7 @@
       </div>
 
       <div class="row">
-
-        <hr>
-        <footer>
-          <p>&copy; Company 2012</p>
-        </footer>
-
+        <%= render "layouts/footer" %>
       </div>
     </div>
 </body>

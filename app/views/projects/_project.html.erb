@@ -21,14 +21,17 @@
         <span><%= project.headline %></span><br>
         <label><strong>Descrição:</strong></label>
         <span><%= project.decription %></span><br>
-        <label><strong>Soundcloud</strong></label>
-        <span><%= project.soundcloud_url %></span><br>
         <label><strong>Objetivo:</strong></label>
         <span><%= project.price %></span><br>
         <div class="info_bar">
           <div class="status_bar">
             <div class="progress" style="width:#{project.status_progress}"></div>
           </div>
+          <section class="icons">
+            <%= link_to project.soundcloud_url do %>
+              <div class="soundcloud"></div>
+            <% end %>
+          </section>
         </div>
         <div id="buttons">
           <% if user_signed_in? && project.user_id == current_user.id %>

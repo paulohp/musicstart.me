@@ -4,6 +4,10 @@ class Project < ActiveRecord::Base
 
   mount_uploader :image_url, ProjectPictureUploader
 
+  def owner
+    User.find(self.user_id).name
+  end
+
   def status_progress
     if successful?
       "100%"

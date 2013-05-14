@@ -1,40 +1,47 @@
 <p id="notice"><%= notice %></p>
+<section class="row box">
+  <section class="eleven columns">
+    <header>
+      <div>
+        <%= image_tag(@project.image_url) if @project.image_url %>
+      </div>
+      <h4><%= @project.name %></h4>
+    </header>
 
-<p>
-  <b>Name:</b>
-  <%= @project.name %>
-</p>
+    <p>
+      <b>Category:</b>
+      <%= @project.category %>
+    </p>
 
-<p>
-  <b>Category:</b>
-  <%= @project.category %>
-</p>
+    <p>
+      <b>Headline:</b>
+      <%= @project.headline %>
+    </p>
 
-<p>
-  <b>Headline:</b>
-  <%= @project.headline %>
-</p>
+    <p>
+      <b>Decription:</b>
+      <%= @project.decription %>
+    </p>
 
-<p>
-  <b>Decription:</b>
-  <%= @project.decription %>
-</p>
+    <p>
+      <b>Soundcloud url:</b>
+      <%= @project.soundcloud_url %>
+    </p>
 
-<p>
-  <b>Soundcloud url:</b>
-  <%= @project.soundcloud_url %>
-</p>
+    <p>
+      <b>User:</b>
+      <%= @project.user_id %>
+    </p>
 
-<p>
-  <b>User:</b>
-  <%= @project.user_id %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @project.price %>
-</p>
-
+    <p>
+      <b>Price:</b>
+      <%= @project.price %>
+    </p>
+  </section>
+  <aside class="five columns box-inset">
+  <button class="btn">Quero Comprar</button>
+  </aside>
+</section>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

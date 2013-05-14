@@ -1,28 +1,30 @@
 <% @projects_in_home.each do |project| %>
   <div class="box-inset project eight columns">
-    <header>
-      <div>
-        <%= image_tag(project.image_url.thumb.url) if project.image_url %>
-      </div>
-      <h4><%= project.name %></h4>
-    </header>
-    <article>
-      <label><strong>Categoria:</strong></label>
-      <span><%= project.category %></span><br>
-      <label><strong>Headline:</strong></label>
-      <span><%= project.headline %></span><br>
-      <label><strong>Objetivo:</strong></label>
-      <span><%= project.price %></span><br>
-      <div class="info_bar">
-        <div class="status_bar">
-          <div class="progress" style="width:<%= project.status_progress %>"></div>
+    <%= link_to "projects/#{project.id}" do%>
+      <header>
+        <div>
+          <%= image_tag(project.image_url.thumb.url) if project.image_url %>
         </div>
-        <section class="icons">
-          <%= link_to project.soundcloud_url do %>
-            <div class="soundcloud"></div>
-          <% end %>
-        </section>
-      </div>
-    </article>
+        <h4><%= project.name %></h4>
+      </header>
+      <article>
+        <label><strong>Categoria:</strong></label>
+        <span><%= project.category %></span><br>
+        <label><strong>Headline:</strong></label>
+        <span><%= project.headline %></span><br>
+        <label><strong>Objetivo:</strong></label>
+        <span><%= project.price %></span><br>
+        <div class="info_bar">
+          <div class="status_bar">
+            <div class="progress" style="width:<%= project.status_progress %>"></div>
+          </div>
+          <section class="icons">
+            <%= link_to project.soundcloud_url do %>
+              <div class="soundcloud"></div>
+            <% end %>
+          </section>
+        </div>
+      </article>
+    <% end %>
   </div>
 <% end %>

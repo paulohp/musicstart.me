@@ -34,13 +34,13 @@
         <div id="buttons">
           <% if user_signed_in? && project.user_id == current_user.id %>
             <p class="btn small">
-              <%= link_to 'Mostrar', project %>
+              <%= link_to 'Ver', project %>
             </p>
             <p class="btn small">
               <%= link_to 'Editar', edit_project_path(project) %>
             </p>
             <p class="btn small">
-              <%= link_to 'Deletar', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <%= link_to 'Apagar', project, method: :delete, data: { confirm: 'Are you sure?' } %>
             </p>
           <% end %>
         </div>

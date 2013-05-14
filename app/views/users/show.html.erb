@@ -12,4 +12,18 @@
 <div class="field row">
   <strong>e-mail: </strong><%= @user.email %>
 </div>
+<div class="field row">
+  <h4>Badges</h4>
+  <article class="badges">
+    <% @user.badges.each do |badge| %>
+      <%= badge.name %>
+    <% end %>
+  </article>
+</div>
+<div class="field row">
+  <h4>Pontos</h4>
+  <article class="points">
+    <%= @user.points.last.value %>
+  </article>
+</div>
 <%= render 'projects/project' %>

@@ -42,9 +42,10 @@ class ProjectsController < ApplicationController
   # POST /tasks.json
   def create
     @project = current_user.projects.build(params[:project])
-
+    @user = current_user
     respond_to do |format|
       if @project.save
+        @user.change_points({ points: 10, type: 1 })
         format.html { redirect_to @project, notice: 'Task was successfully created.' }
         format.json { render json: @project, status: :created, location: @project }
       else

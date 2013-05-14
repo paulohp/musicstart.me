@@ -49,6 +49,12 @@ form{
   box-shadow: 3px 1px 2px #f0f0f0;
   padding: 20px;
 }
+.box-inset{
+  background-color: #e5e5e5;
+  border-radius:4px;
+  box-shadow: 1px 1px 9px #E0E0E0 inset;
+  padding: 20px;
+}
 .status_bar{
   background-color: white;
   width: 202px;

@@ -7,7 +7,7 @@
 </div>
 <section id="projects">
   <% @projects.each do |project| %>
-    <div class="box project four columns">
+    <div class="box project five columns">
       <header>
         <div>
           <%= image_tag(project.image_url.thumb.url) if project.image_url %>
@@ -19,8 +19,6 @@
         <span><%= project.category %></span><br>
         <label><strong>Headline:</strong></label>
         <span><%= project.headline %></span><br>
-        <label><strong>Descrição:</strong></label>
-        <span><%= project.decription %></span><br>
         <label><strong>Objetivo:</strong></label>
         <span><%= project.price %></span><br>
         <div class="info_bar">

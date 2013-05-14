@@ -29,14 +29,14 @@
           <h1 class="logo">MusicStart!</h1>
           <a href="#" class="toggle" data-for="#prettynav > ul"><img src="assets/images/icon_nav_toggle.gif" /></a>
           <ul>
-            <li><a href="/projects">Explorar</a></li>
-            <li><a href="/projects/new">Enviar</a></li>
+            <li><a href="/explorar">Explorar</a></li>
+            <li><a href="/enviar">Enviar</a></li>
             <% if user_signed_in? %>
               <li><a href="#"><%= current_user.email %></a>
                 <div class="dropdown">
                   <ul>
                     <li><a href="/users/<%=current_user.id%>">Perfil</a></li>
-                    <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+                    <li><%= link_to "Sair", destroy_user_session_path, :method => :delete %></li>
                   </ul>
                 </div>
               </li>
@@ -70,5 +70,5 @@
         <%= render "layouts/footer" %>
       </div>
     </div>
-</body>
+  </body>
 </html>

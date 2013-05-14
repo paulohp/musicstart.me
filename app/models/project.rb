@@ -4,11 +4,11 @@ class Project < ActiveRecord::Base
 
   mount_uploader :image_url, ProjectPictureUploader
 
-  def self.status_progress
+  def status_progress
     if successful?
       "100%"
     else
-      "8%"
+      "20%"
     end
   end
 end

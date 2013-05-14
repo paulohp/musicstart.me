@@ -22,10 +22,17 @@
   width: 98%;
   display: table;
   margin: 15px auto;
+  .clearfix{
+    clear:both;
+  }
+  .content-area{
+    margin-bottom: 25px;
+  }
 }
 .wrapper-title{
   padding: 8px 16px;
   background:#444;
+  margin: 0 0 15px;
 }
 .main-title{
   color:#FFF;

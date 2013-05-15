@@ -12,7 +12,8 @@
         <div>
           <%= image_tag(project.image_url.thumb.url) if project.image_url %>
         </div>
-        <h4><%= project.name %></h4>
+        <h4 class="project-title"><%= project.name %></h4>
+        <span class="project-owner">by <%=project.owner%></span>
       </header>
       <article>
         <label><strong>Categoria:</strong></label>
@@ -25,7 +26,7 @@
           <div class="status_bar">
             <div class="progress" style="width:#{project.status_progress}"></div>
           </div>
-          <section class="icons">
+          <section>
             <div class="box-inset left"></div>
             <div class="box-inset left"></div>
             <div class="box-inset left"></div>

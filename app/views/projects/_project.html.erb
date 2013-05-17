@@ -7,45 +7,44 @@
 </div>
 <section id="projects">
   <% @projects.each do |project| %>
-    <div class="box project five columns">
-      <header>
-        <div>
-          <%= image_tag(project.image_url.thumb.url) if project.image_url %>
-        </div>
-        <h4 class="project-title"><%= project.name %></h4>
-        <span class="project-owner">by <%=project.owner%></span>
-      </header>
-      <article>
-        <label><strong>Categoria:</strong></label>
-        <span><%= project.category %></span><br>
-        <label><strong>Headline:</strong></label>
-        <span><%= project.headline %></span><br>
-        <label><strong>Objetivo:</strong></label>
-        <span><%= project.price %></span><br>
-        <div class="info_bar">
-          <div class="status_bar">
-            <div class="progress" style="width:#{project.status_progress}"></div>
+    <%= link_to project do %>
+      <div class="box project five columns">
+        <header>
+          <div>
+            <%= image_tag(project.image_url.thumb.url) if project.image_url %>
           </div>
-          <section>
-            <div class="box-inset left"></div>
-            <div class="box-inset left"></div>
-            <div class="box-inset left"></div>
-          </section>
-        </div>
-        <div id="buttons">
-          <% if user_signed_in? && project.user_id == current_user.id %>
-            <p class="btn small">
-              <%= link_to 'Ver', project %>
-            </p>
-            <p class="btn small">
-              <%= link_to 'Editar', edit_project_path(project) %>
-            </p>
-            <p class="btn small">
-              <%= link_to 'Apagar', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </p>
-          <% end %>
-        </div>
-      </article>
-    </div>
+          <h4 class="project-title"><%= project.name %></h4>
+          <span class="project-owner">by <%=project.owner%></span>
+        </header>
+        <article>
+          <span>
+            <%= project.decription.to_s.slice(0..30) %>
+          </span>
+          <div class="info_bar">
+            <div class="status_bar">
+              <div class="progress" style="width:#{project.status_progress}"></div>
+            </div>
+            <section>
+              <div class="box-inset left"></div>
+              <div class="box-inset left"></div>
+              <div class="box-inset left"></div>
+            </section>
+          </div>
+          <div id="buttons">
+            <% if user_signed_in? && project.user_id == current_user.id %>
+              <p class="btn small">
+                <%= link_to 'Ver', project %>
+              </p>
+              <p class="btn small">
+                <%= link_to 'Editar', edit_project_path(project) %>
+              </p>
+              <p class="btn small">
+                <%= link_to 'Apagar', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </p>
+            <% end %>
+          </div>
+        </article>
+      </div>
+    <% end %>
   <% end %>
 </section>

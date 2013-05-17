@@ -4,16 +4,56 @@
 		"selected_items":
 		[
 			[
-				"end",
-				"end  (function)"
+				"des",
+				"description"
 			],
 			[
-				"proje",
-				"projeto"
+				"pro",
+				"projects"
+			],
+			[
+				"use",
+				"user"
+			],
+			[
+				"hea",
+				"heart"
+			],
+			[
+				"bac",
+				"background"
 			],
 			[
 				"proj",
+				"project"
+			],
+			[
+				"proje",
+				"projects"
+			],
+			[
+				"op",
+				"open  (function)"
+			],
+			[
+				"ta",
+				"table-cell  (value)"
+			],
+			[
+				"po",
 				"projects_in_home"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"bo",
+				"box"
+			],
+			[
+				"end",
+				"end  (function)"
 			],
 			[
 				"Proj",
@@ -56,10 +96,6 @@
 				"picture_url"
 			],
 			[
-				"pro",
-				"project"
-			],
-			[
 				"Pro",
 				"ProjectPictureUploader"
 			],
@@ -98,10 +134,6 @@
 			[
 				"strk",
 				"strokeWidth"
-			],
-			[
-				"bac",
-				"backgroundColor"
 			],
 			[
 				"text",
@@ -222,10 +254,6 @@
 			[
 				"Car",
 				"Card"
-			],
-			[
-				"op",
-				"option	Tag"
 			],
 			[
 				"d",
@@ -486,52 +514,130 @@
 			[
 				"res",
 				"respond_to"
-			],
-			[
-				"sli",
-				"slider"
-			],
-			[
-				"lay",
-				"layouts/slider"
-			],
-			[
-				"t",
-				"texto"
-			],
-			[
-				"na",
-				"names"
-			],
-			[
-				"red",
-				"renderAll"
-			],
-			[
-				"ra",
-				"radius"
-			],
-			[
-				"gr",
-				"group"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/admin/projects.rb",
+			"file": "app/views/pages/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 39,
+				"buffer_size": 1675,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/admin/projects/index.html.erb",
+			"file": "app/views/pages/_destaques.html.erb",
 			"settings":
 			{
-				"buffer_size": 9,
+				"buffer_size": 1029,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/pages/_projetos_quase_acabando.html.erb",
+			"settings":
+			{
+				"buffer_size": 925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/pages_controller.rb",
+			"settings":
+			{
+				"buffer_size": 335,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/projects.css.scss",
+			"settings":
+			{
+				"buffer_size": 1504,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/projects_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2158,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 400 files for \"icon_nav_toggle\"\n\n/projetos/rails/musicstartme-app/app/views/layouts/application.html.erb:\n   28          <nav class=\"pretty navbar clearfix\" id=\"prettynav\">\n   29            <h1 class=\"logo\">MusicStart!</h1>\n   30:           <a href=\"#\" class=\"toggle\" data-for=\"#prettynav > ul\"><img src=\"assets/images/icon_nav_toggle.gif\" /></a>\n   31            <ul>\n   32              <li><a href=\"/explorar\">Explorar</a></li>\n\n1 match in 1 file\n\n\nSearching 400 files for \"hybrid.css\"\n\n/projetos/rails/musicstartme-app/app/assets/stylesheets/imports.css:\n    1: @import url('gumby.hybrid.css');\n    2  @import url('ui.css');\n    3  @import url('style.css');\n\n1 match in 1 file\n\n\nSearching 400 files for \"12col\"\n\n/projetos/rails/musicstartme-app/app/assets/stylesheets/import12.css:\n    1: @import url('gumby.12col.css');\n    2  @import url('ui.css');\n    3  @import url('style.css');\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 916,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/import12.css",
+			"settings":
+			{
+				"buffer_size": 105,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/imports.css",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/project.rb",
+			"settings":
+			{
+				"buffer_size": 512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/projects/_project.html.erb",
+			"settings":
+			{
+				"buffer_size": 1637,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 2457,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 646,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/projects/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 996,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css",
+			"settings":
+			{
+				"buffer_size": 862,
 				"line_ending": "Unix"
 			}
 		}
@@ -584,8 +690,19 @@
 	},
 	"file_history":
 	[
-		"/projetos/rails/musicstartme-app/app/views/admin/projects/index.erb.html",
 		"/projetos/rails/musicstartme-app/app/models/user.rb",
+		"/projetos/rails/musicstartme-app/app/controllers/users_controller.rb",
+		"/projetos/rails/musicstartme-app/app/views/layouts/_footer.html.erb",
+		"/projetos/rails/musicstartme-app/config/initializers/devise.rb",
+		"/projetos/rails/musicstartme-app/app/assets/javascripts/application.js",
+		"/projetos/rails/musicstartme-app/Gemfile",
+		"/projetos/rails/musicstartme-app/config/routes.rb",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss",
+		"/projetos/rails/musicstartme-app/db/schema.rb",
+		"/projetos/rails/musicstartme-app/app/views/pages/_project.html.erb",
+		"/projetos/rails/musicstartme-app/app/admin/projects.rb",
+		"/projetos/rails/musicstartme-app/app/views/admin/projects/index.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/admin/projects/index.erb.html",
 		"/projetos/rails/musicstartme-app/app/models/page.rb",
 		"/projetos/rails/musicstartme-app/app/controllers/pages_controller.rb",
 		"/projetos/rails/musicstartme-app/app/views/pages/index.html.erb",
@@ -596,16 +713,12 @@
 		"/projetos/rails/musicstartme-app/app/uploaders/project_picture_uploader.rb",
 		"/projetos/rails/musicstartme-app/app/views/users/show.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/projects/_form.html.erb",
-		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss",
-		"/projetos/rails/musicstartme-app/Gemfile",
-		"/projetos/rails/musicstartme-app/db/schema.rb",
 		"/projetos/rails/musicstartme-app/db/migrate/20130511145830_add_show_home_to_project.rb",
 		"/home/paulo/.config/sublime-text-2/Packages/User/RubyTest.sublime-settings",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/application.css",
 		"/projetos/rails/musicstartme-app/app/controllers/projects_controller.rb",
 		"/projetos/rails/musicstartme-app/.gitignore",
 		"/projetos/rails/sga/Gemfile.lock",
-		"/projetos/rails/musicstartme-app/app/admin/projects.rb",
 		"/projetos/rails/musicstartme-app/db/migrate/20130404202548_add_nick_name_to_users.rb",
 		"/projetos/rails/musicstartme-app/db/migrate/20130404204418_add_pic_to_projects.rb",
 		"/projetos/padrino/sample_blog/Gemfile",
@@ -704,14 +817,7 @@
 		"/projetos/rails/smartconvites/app/assets/javascripts/zeditor.js",
 		"/projetos/rails/smartconvites/app/views/admin/invitations/index.html.erb",
 		"/projetos/rails/smartconvites/app/views/pages/personalize.html.erb",
-		"/projetos/rails/smartconvites/app/views/layouts/_menu.html.erb",
-		"/projetos/rails/smartconvites/app/views/pages/invitations.html.erb",
-		"/projetos/rails/smartconvites/app/views/invitations/_invite.html.erb",
-		"/projetos/rails/smartconvites/db/migrate/20130202144529_change_type_in_file_png.rb",
-		"/home/paulo/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/projetos/rails/smartconvites/db/migrate/20130201194556_add_file_png_to_invitation.rb",
-		"/projetos/rails/smartconvites/app/assets/stylesheets/active_admin.css.scss",
-		"/projetos/rails/smartconvites/app/assets/stylesheets/scaffolds.css.scss"
+		"/projetos/rails/smartconvites/app/views/layouts/_menu.html.erb"
 	],
 	"find":
 	{
@@ -719,7 +825,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 98.0,
 		"where_history":
 		[
 			""
@@ -730,6 +836,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"12col",
+			"hybrid.css",
+			"icon_nav_toggle",
+			"pro",
+			"box-inverse",
+			"datepicker",
+			".datepicker",
+			".datepicker(",
+			".box{",
+			".box",
 			"#encoding",
 			"mult",
 			"field",
@@ -847,17 +963,7 @@
 			"legend",
 			"preco-product",
 			"phot",
-			"/*",
-			"res",
-			"tab",
-			"mydb",
-			"right",
-			"tab",
-			";\n",
-			"products",
-			"$product",
-			"well",
-			"mydb"
+			"/*"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -973,22 +1079,101 @@
 	"groups":
 	[
 		{
+			"selected": 13,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/admin/projects.rb",
+					"file": "app/views/pages/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 39,
+						"buffer_size": 1675,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								486,
+								486
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/pages/_destaques.html.erb",
+					"settings":
+					{
+						"buffer_size": 1029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/pages/_projetos_quase_acabando.html.erb",
+					"settings":
+					{
+						"buffer_size": 925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/pages_controller.rb",
+					"settings":
+					{
+						"buffer_size": 335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
 							]
 						],
 						"settings":
@@ -1002,24 +1187,310 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/views/admin/projects/index.html.erb",
+					"buffer": 4,
+					"file": "app/assets/stylesheets/projects.css.scss",
 					"settings":
 					{
-						"buffer_size": 9,
+						"buffer_size": 1504,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5,
-								5
+								1340,
+								1340
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/projects_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1891,
+								1891
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 773.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 916,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										329,
+										344
+									],
+									[
+										594,
+										604
+									],
+									[
+										821,
+										826
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								771,
+								771
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 440.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/stylesheets/import12.css",
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/assets/stylesheets/imports.css",
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/models/project.rb",
+					"settings":
+					{
+						"buffer_size": 512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/projects/_project.html.erb",
+					"settings":
+					{
+						"buffer_size": 1637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								615,
+								615
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 2457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1199,
+								1199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1043.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/views/users/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								323,
+								323
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/views/projects/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								856,
+								856
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 685.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/assets/stylesheets/application.css",
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1080,8 +1551,56 @@
 		"selected_items":
 		[
 			[
+				"appl",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"pro",
+				"app/models/project.rb"
+			],
+			[
+				"pr",
+				"app/controllers/projects_controller.rb"
+			],
+			[
+				"user",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"proj",
+				"app/models/project.rb"
+			],
+			[
+				"users/",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"ap",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"projects/",
+				"app/views/projects/_project.html.erb"
+			],
+			[
+				"sch",
+				"db/schema.rb"
+			],
+			[
+				"prj",
+				"app/controllers/projects_controller.rb"
+			],
+			[
 				"page",
-				"app/assets/stylesheets/pages.css.scss"
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"pages/",
+				"app/views/pages/index.html.erb"
 			],
 			[
 				"us",
@@ -1104,10 +1623,6 @@
 				"Gemfile"
 			],
 			[
-				"proj",
-				"app/models/project.rb"
-			],
-			[
 				"project.c",
 				"app/assets/stylesheets/projects.css.scss"
 			],
@@ -1118,10 +1633,6 @@
 			[
 				"git",
 				".gitignore"
-			],
-			[
-				"pro",
-				"app/controllers/projects_controller.rb"
 			],
 			[
 				"_proje",
@@ -1156,10 +1667,6 @@
 				"app/views/projects/_form.html.erb"
 			],
 			[
-				"projects/",
-				"app/views/projects/index.html.erb"
-			],
-			[
 				"projects",
 				"app/admin/projects.rb"
 			],
@@ -1170,10 +1677,6 @@
 			[
 				"sc",
 				"db/schema.rb"
-			],
-			[
-				"user",
-				"app/assets/stylesheets/users.css.scss"
 			],
 			[
 				"text",
@@ -1206,10 +1709,6 @@
 			[
 				"order",
 				"app/controllers/orders_controller.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			],
 			[
 				"moi",
@@ -1440,10 +1939,6 @@
 				"app/assets/javascripts/site.js"
 			],
 			[
-				"appl",
-				"app/views/layouts/application.html.erb"
-			],
-			[
 				"me",
 				"app/views/layouts/_menu.html.erb"
 			],
@@ -1566,18 +2061,6 @@
 			[
 				"ed",
 				"app/View/Users/edit.ctp"
-			],
-			[
-				"rou",
-				"app/Config/routes.php"
-			],
-			[
-				"fomr",
-				"app/View/Elements/form_users.ctp"
-			],
-			[
-				"side",
-				"wp-content/themes/gts/sidebar-carros.php"
 			]
 		],
 		"width": 0.0

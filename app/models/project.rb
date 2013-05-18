@@ -16,6 +16,8 @@ class Project < ActiveRecord::Base
     end
   end
 
+  def description
+    self.decription.to_s.slice(0..120)
   def status_progress
     if successful?
       "100%"

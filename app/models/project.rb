@@ -9,15 +9,22 @@ class Project < ActiveRecord::Base
 
   def owner
     user = User.find(self.user_id)
-    if user.name != ""
+    if user.name == ""
       return user.email
     else
       return user.name
     end
   end
 
+  def location
+    user = User.find(self.user_id)
+    user.location
+  end
+
   def description
     self.decription.to_s.slice(0..120)
+  end
+
   def status_progress
     if successful?
       "100%"

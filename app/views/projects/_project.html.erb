@@ -20,14 +20,26 @@
           <span>
             <%= project.description %>
           </span>
-          <div class="info_bar">
+          <div class="project_location">
+            <i class="icons location"></i>
+            <span>
+              <%= project.location %>
+            </span>
+          </div>
+          <div class="info_bar box-inset" style="clear:both;float:left">
             <div class="status_bar">
               <div class="progress" style="width:#{project.status_progress}"></div>
             </div>
-            <section>
-              <div class="box-inset left"></div>
-              <div class="box-inset left"></div>
-              <div class="box-inset left"></div>
+            <section class="more">
+              <div class="box left">
+                <span>financiado</span>
+              </div>
+              <div class="box left">
+                <span>arrecadado</span>
+              </div>
+              <div class="box left">
+                <span>dias para<br />o fim</span>
+              </div>
             </section>
           </div>
           <div id="buttons">

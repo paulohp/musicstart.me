@@ -581,7 +581,7 @@
 			"file": "app/assets/stylesheets/import12.css",
 			"settings":
 			{
-				"buffer_size": 105,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -589,7 +589,7 @@
 			"file": "app/assets/stylesheets/imports.css",
 			"settings":
 			{
-				"buffer_size": 73,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -597,7 +597,7 @@
 			"file": "app/models/project.rb",
 			"settings":
 			{
-				"buffer_size": 512,
+				"buffer_size": 569,
 				"line_ending": "Unix"
 			}
 		},
@@ -605,7 +605,7 @@
 			"file": "app/views/projects/_project.html.erb",
 			"settings":
 			{
-				"buffer_size": 1637,
+				"buffer_size": 1620,
 				"line_ending": "Unix"
 			}
 		},
@@ -825,7 +825,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 98.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -1079,7 +1079,6 @@
 	"groups":
 	[
 		{
-			"selected": 13,
 			"sheets":
 			[
 				{
@@ -1233,7 +1232,7 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 773.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1295,7 +1294,7 @@
 					"file": "app/assets/stylesheets/import12.css",
 					"settings":
 					{
-						"buffer_size": 105,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1321,7 +1320,7 @@
 					"file": "app/assets/stylesheets/imports.css",
 					"settings":
 					{
-						"buffer_size": 73,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1347,15 +1346,15 @@
 					"file": "app/models/project.rb",
 					"settings":
 					{
-						"buffer_size": 512,
+						"buffer_size": 569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								404,
-								404
+								475,
+								475
 							]
 						],
 						"settings":
@@ -1373,15 +1372,15 @@
 					"file": "app/views/projects/_project.html.erb",
 					"settings":
 					{
-						"buffer_size": 1637,
+						"buffer_size": 1620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								615,
-								615
+								624,
+								624
 							]
 						],
 						"settings":
@@ -1467,7 +1466,7 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 685.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1551,12 +1550,12 @@
 		"selected_items":
 		[
 			[
-				"appl",
-				"app/views/layouts/application.html.erb"
-			],
-			[
 				"pro",
 				"app/models/project.rb"
+			],
+			[
+				"appl",
+				"app/views/layouts/application.html.erb"
 			],
 			[
 				"pr",

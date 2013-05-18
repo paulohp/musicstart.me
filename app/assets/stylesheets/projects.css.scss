@@ -14,6 +14,7 @@ $pink: #E75297;
 $orange: #f69b0e;
 
 $grafiti: #363636;
+$media_grafiti: #909090;
 
 $minimal_white: #f2f2f2;
 
@@ -34,6 +35,17 @@ $red: #cc1529;
 #projects{
   #buttons{
     margin-top: 15px;
+  }
+  span{
+    color:$media_grafiti;
+    font-size:13px
+  }
+  i{
+    margin-top: 3px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
   }
 }
 form{
@@ -81,6 +93,13 @@ form{
   margin:0 auto;
   width: 225px;
   padding: 5px 5px 10px;
+  .more .box{
+    margin:10px 5px;
+    padding:5px;
+    span{
+      text-align:center;
+    }
+  }
 }
 .soundcloud{
   width:50px;

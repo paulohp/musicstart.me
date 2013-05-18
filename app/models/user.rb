@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :nickname, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :nickname, :email, :password, :password_confirmation, :remember_me, :location
   # attr_accessible :title, :body
   validates_uniqueness_of :email, :nickname, case_sensitive: false
   validates :nickname, format: { with: /\A[\w-]+\Z/i, message: "must contain only numbers, letters and - , _ characters" }, length: { in: 2..20 }, presence: true, uniqueness: true

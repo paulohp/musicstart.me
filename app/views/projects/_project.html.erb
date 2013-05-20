@@ -7,8 +7,8 @@
 </div>
 <section id="projects">
   <% @projects.each do |project| %>
-    <%= link_to project do %>
-      <div class="box project five columns">
+    <div class="box project five columns">
+      <%= link_to project do %>
         <header>
           <div>
             <%= image_tag(project.image_url.thumb.url) if project.image_url %>
@@ -17,7 +17,7 @@
           <span class="project-owner">by <%=project.owner%></span>
         </header>
         <article>
-          <span>
+          <span class="wrap-span">
             <%= project.description %>
           </span>
           <div class="project_location">
@@ -56,7 +56,7 @@
             <% end %>
           </div>
         </article>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   <% end %>
 </section>

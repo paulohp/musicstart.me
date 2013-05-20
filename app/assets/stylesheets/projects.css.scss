@@ -36,6 +36,14 @@ $red: #cc1529;
   #buttons{
     margin-top: 15px;
   }
+  .project{
+    >article{
+      >span{
+        display:block;
+        min-height: 110px;
+      }
+    }
+  }
   span{
     color:$media_grafiti;
     font-size:13px

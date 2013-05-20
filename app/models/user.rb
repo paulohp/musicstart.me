@@ -1,8 +1,12 @@
 class User < ActiveRecord::Base
+
+  after_save :atualizar_pontos
+
   has_many :points
   has_many :badges , :through => :levels
   has_many :levels
   has_many :projects, :dependent => :destroy
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -13,8 +17,8 @@ class User < ActiveRecord::Base
   attr_accessible :name, :nickname, :email, :password, :password_confirmation, :remember_me, :location
   # attr_accessible :title, :body
   validates_uniqueness_of :email, :nickname, case_sensitive: false
-  validates :nickname, format: { with: /\A[\w-]+\Z/i, message: "must contain only numbers, letters and - , _ characters" }, length: { in: 2..20 }, presence: true, uniqueness: true
 
+  validates :nickname, format: { with: /\A[\w-]+\Z/i, message: "must contain only numbers, letters and - , _ characters" }, length: { in: 2..20 }, presence: true, uniqueness: true
 
   def change_points(options)
     if Gioco::Core::TYPES
@@ -55,6 +59,14 @@ class User < ActiveRecord::Base
                           :points     => points,
                           :percentage => percentage
                         }
+    end
+  end
+
+  def atualizar_pontos
+    user = User.find(self.id)
+    type = Type.where(:name => "ajudante")
+    if user.points.last == nil
+      user.change_points({ points: 0, type: type.first.id })
     end
   end
 

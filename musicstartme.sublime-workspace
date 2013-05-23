@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"min",
+				"min-height"
+			],
+			[
+				"at",
+				"atualizar_pontos"
+			],
+			[
+				"aft",
+				"after_save"
+			],
+			[
 				"up",
 				"update_points"
 			],
@@ -328,10 +340,6 @@
 				"element_scaleX"
 			],
 			[
-				"at",
-				"attr"
-			],
-			[
 				"scale",
 				"scaleY"
 			],
@@ -506,14 +514,6 @@
 			[
 				"htm",
 				"html"
-			],
-			[
-				"br",
-				"breadcumbs_text"
-			],
-			[
-				"a",
-				"a	Tag"
 			]
 		]
 	},
@@ -555,7 +555,7 @@
 			"file": "app/views/projects/_project.html.erb",
 			"settings":
 			{
-				"buffer_size": 2008,
+				"buffer_size": 2026,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "app/assets/stylesheets/projects.css.scss",
 			"settings":
 			{
-				"buffer_size": 1785,
+				"buffer_size": 1843,
 				"line_ending": "Unix"
 			}
 		},
@@ -579,7 +579,7 @@
 			"file": "app/controllers/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 691,
+				"buffer_size": 692,
 				"line_ending": "Unix"
 			}
 		},
@@ -627,7 +627,7 @@
 			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 2317,
+				"buffer_size": 2553,
 				"line_ending": "Unix"
 			}
 		}
@@ -680,6 +680,7 @@
 	},
 	"file_history":
 	[
+		"/home/paulo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/paulo/Área de Trabalho/person.b",
 		"/home/paulo/Área de Trabalho/person.java",
 		"/projetos/rails/musicstartme-app/app/models/project.rb",
@@ -745,7 +746,6 @@
 		"/projetos/rails/smartconvites/app/views/orders/_card_data.html.erb",
 		"/projetos/rails/smartconvites/app/models/order.rb",
 		"/projetos/rails/smartconvites/app/views/admin/invitations/_form.html.erb",
-		"/home/paulo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/projetos/rails/smartconvites/app/assets/javascripts/orders.js",
 		"/home/paulo/Área de Trabalho/l.sql",
 		"/projetos/rails/smartconvites/app/models/user.rb",
@@ -1069,7 +1069,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1093,7 +1093,7 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 488.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1181,15 +1181,15 @@
 					"file": "app/views/projects/_project.html.erb",
 					"settings":
 					{
-						"buffer_size": 2008,
+						"buffer_size": 2026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1342,
-								1342
+								604,
+								604
 							]
 						],
 						"settings":
@@ -1197,7 +1197,7 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 100.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1233,15 +1233,15 @@
 					"file": "app/assets/stylesheets/projects.css.scss",
 					"settings":
 					{
-						"buffer_size": 1785,
+						"buffer_size": 1843,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1708,
-								1708
+								199,
+								199
 							]
 						],
 						"settings":
@@ -1249,7 +1249,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1913.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1259,7 +1259,7 @@
 					"file": "app/controllers/users_controller.rb",
 					"settings":
 					{
-						"buffer_size": 691,
+						"buffer_size": 692,
 						"regions":
 						{
 						},
@@ -1275,7 +1275,7 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 63.0,
+						"translation.y": 88.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1301,7 +1301,7 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 525.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1396,8 +1396,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								572,
+								572
 							]
 						],
 						"settings":
@@ -1405,7 +1405,7 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 38.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1415,15 +1415,15 @@
 					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 2317,
+						"buffer_size": 2553,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								864,
-								864
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1490,7 +1490,7 @@
 		[
 			[
 				"user",
-				"app/controllers/users_controller.rb"
+				"app/models/user.rb"
 			],
 			[
 				"users/s",
@@ -2008,6 +2008,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"sma",
+				"/projetos/rails/smartconvites/smartconvites.sublime-project"
+			],
 			[
 				"",
 				"/projetos/rails/peixonauta/peixonauta.sublime-project"

@@ -14,22 +14,24 @@
 
     <div class="field row">
       <%= f.label :name %><br />
-      <%= f.text_field :name %>
+      <%= f.text_field :name, :class => 'text' %>
     </div>
     <div class="field row">
       <%= f.label :nickname %><br />
-      <%= f.text_field :nickname %>
+      <%= f.text_field :nickname, :class => 'text' %>
     </div>
     <div class="field row">
       <%= f.label 'Localização' %>
-      <%= f.text_field :location %>
+      <%= f.text_field :location, :class => 'text'%>
     </div>
     <div class="field row">
       <%= f.label :email %><br />
-      <%= f.text_field :email %>
+      <%= f.text_field :email, :class => 'text' %>
     </div>
     <div class="actions">
-      <%= f.submit %>
+      <p class="btn primary">
+        <%= submit_form "Salvar Modificações","#new_project" %>
+      </p>
     </div>
   <% end %>
 </section>

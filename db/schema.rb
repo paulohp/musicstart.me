@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130517032541) do
+ActiveRecord::Schema.define(:version => 20130529235151) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -97,6 +97,15 @@ ActiveRecord::Schema.define(:version => 20130517032541) do
     t.integer  "online_day"
     t.datetime "expires_at"
     t.boolean  "show_home"
+  end
+
+  create_table "rewards", :force => true do |t|
+    t.text     "description"
+    t.integer  "project_id"
+    t.integer  "minimum_value"
+    t.string   "maximum_backers"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "types", :force => true do |t|

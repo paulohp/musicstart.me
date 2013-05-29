@@ -1,6 +1,6 @@
 class Project < ActiveRecord::Base
   belongs_to :users
-
+  has_many :rewards
   attr_accessible :category, :decription, :headline, :name, :price, :soundcloud_url, :user_id, :approved, :image_url, :online_day
 
   validates_presence_of :name, :price

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyText
+  project_id: 1
+  minimum_value: 
+  maximum_backers: MyString
+
+two:
+  description: MyText
+  project_id: 1
+  minimum_value: 
+  maximum_backers: MyString

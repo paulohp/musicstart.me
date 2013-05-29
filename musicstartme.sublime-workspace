@@ -523,8 +523,18 @@
 			"file": "app/views/pages/_destaques.html.erb",
 			"settings":
 			{
-				"buffer_size": 1340,
+				"buffer_size": 1331,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 397 files for \".project\"\n\n/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss:\n   63      margin-top: 15px;\n   64    }\n   65:   .project{\n   66      .wrap-span{\n   67            display:block;\n\n/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.scss:\n   37      margin-top: 15px;\n   38    }\n   39:   .project{\n   40      .wrap-span{\n   41            display:block;\n   ..\n   89    }\n   90  }\n   91: .project-title{\n   92    line-height: 0.8;\n   93  }\n   94: .project-owner{\n   95    font-size: 0.8em;\n   96  }\n\n/projetos/rails/musicstartme-app/app/controllers/projects_controller.rb:\n   26    # GET /tasks/new.json\n   27    def new\n   28:     @project = current_user.projects.build\n   29  \n   30      respond_to do |format|\n   ..\n   36    # GET /tasks/1/edit\n   37    def edit\n   38:     @project = current_user.projects.find(params[:id])\n   39    end\n   40  \n   ..\n   42    # POST /tasks.json\n   43    def create\n   44:     @project = current_user.projects.build(params[:project])\n   45      @user = current_user\n   46      respond_to do |format|\n   ..\n   59    # PUT /tasks/1.json\n   60    def update\n   61:     @project = current_user.projects.find(params[:id])\n   62  \n   63      respond_to do |format|\n   ..\n   75    # DELETE /tasks/1.json\n   76    def destroy\n   77:     @project = current_user.projects.find(params[:id])\n   78      @project.destroy\n   79  \n\n/projetos/rails/musicstartme-app/app/controllers/users_controller.rb:\n    3    def show\n    4      @user = User.find(params[:id])\n    5:     @projects = @user.projects.order(\"updated_at DESC\")\n    6      respond_to do |format|\n    7        format.html\n\n10 matches across 4 files\n",
+			"settings":
+			{
+				"buffer_size": 1690,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
@@ -532,6 +542,46 @@
 			"settings":
 			{
 				"buffer_size": 2026,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile.lock",
+			"settings":
+			{
+				"buffer_size": 3891,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/projects.css.scss",
+			"settings":
+			{
+				"buffer_size": 1896,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/pages.css.scss",
+			"settings":
+			{
+				"buffer_size": 1147,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/pages/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1689,
 				"line_ending": "Unix"
 			}
 		}
@@ -730,6 +780,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".project",
 			"dateFormat",
 			"datepicker",
 			"local",
@@ -856,8 +907,7 @@
 			"rem",
 			"Remittence",
 			"'span6'",
-			"'span12'",
-			"legend"
+			"'span12'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -973,7 +1023,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -981,15 +1031,15 @@
 					"file": "app/views/pages/_destaques.html.erb",
 					"settings":
 					{
-						"buffer_size": 1340,
+						"buffer_size": 1331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1288,
-								1288
+								1205,
+								1205
 							]
 						],
 						"settings":
@@ -997,13 +1047,93 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 233.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 1690,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										157,
+										165
+									],
+									[
+										347,
+										355
+									],
+									[
+										445,
+										453
+									],
+									[
+										504,
+										512
+									],
+									[
+										712,
+										720
+									],
+									[
+										857,
+										865
+									],
+									[
+										994,
+										1002
+									],
+									[
+										1183,
+										1191
+									],
+									[
+										1346,
+										1354
+									],
+									[
+										1569,
+										1577
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "app/views/projects/_project.html.erb",
 					"settings":
 					{
@@ -1023,7 +1153,137 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 739.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								874,
+								874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Gemfile.lock",
+					"settings":
+					{
+						"buffer_size": 3891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3891,
+								3891
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/stylesheets/projects.css.scss",
+					"settings":
+					{
+						"buffer_size": 1896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1635,
+								1635
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1958.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/assets/stylesheets/pages.css.scss",
+					"settings":
+					{
+						"buffer_size": 1147,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1147,
+								1147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 693.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/pages/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1080,6 +1340,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"pages/in",
+				"app/views/pages/index.html.erb"
+			],
 			[
 				"projects/",
 				"app/views/projects/_form.html.erb"
@@ -1587,10 +1851,6 @@
 			[
 				"regis",
 				"app/View/Users/register.ctp"
-			],
-			[
-				"fom",
-				"app/View/Elements/form_users.ctp"
 			]
 		],
 		"width": 0.0
@@ -1601,15 +1861,23 @@
 		"selected_items":
 		[
 			[
-				"sma",
+				"sh",
+				"/projetos/rails/shirtfy/shirtfy.sublime-project"
+			],
+			[
+				"sm",
 				"/projetos/rails/smartconvites/smartconvites.sublime-project"
 			],
 			[
 				"",
-				"/projetos/rails/peixonauta/peixonauta.sublime-project"
+				"/projetos/rails/tasklist/_octo.sublime-project"
 			],
 			[
-				"sm",
+				"_oc",
+				"/projetos/rails/tasklist/_octo.sublime-project"
+			],
+			[
+				"sma",
 				"/projetos/rails/smartconvites/smartconvites.sublime-project"
 			],
 			[

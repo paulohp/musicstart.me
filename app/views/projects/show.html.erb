@@ -45,6 +45,7 @@
     <div class="backers">
       <%= @project.total_backers %>
     </div>
+
     <div class="actions">
       <%= form_tag :controller => "backers", :action => "new" do %>
           <% if user_signed_in? %>
@@ -58,19 +59,32 @@
           </p>
         <% end %>
     </div>
+    <div>
+      <header>
+        <h4>Soundcloud</h4>
+      </header>
+      <article>
+        <%= @project.soundcloud_player.html_safe %>
+      </article>
+    </div>
     <section class="projects-rewards">
-      <% @rewards.each do |reward| %>
-        <div id="<%= reward.id %>" class="reward reward_<%= reward.id %>">
-          <header>
-            <strong data-attr="<%= reward.minimum_value %>">
-              Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:
-            </strong>
-          </header>
-          <article>
-            <%= reward.description %>
-          </article>
-        </div>
-      <% end %>
+      <header>
+        <h4>Recompensas</h4>
+      </header>
+      <article>
+        <% @rewards.each do |reward| %>
+          <div id="<%= reward.id %>" class="reward reward_<%= reward.id %>">
+            <header>
+              <strong data-attr="<%= reward.minimum_value %>">
+                Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:
+              </strong>
+            </header>
+            <article>
+              <%= reward.description %>
+            </article>
+          </div>
+        <% end %>
+      </article>
     </section>
   </aside>
 </section>

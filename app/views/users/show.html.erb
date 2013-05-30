@@ -1,18 +1,18 @@
-<div class="field row">
+<div class="field row box-inset">
   <p class="btn small oval">
     <%= link_to "Editar Perfil", edit_user_path %>
   </p>
 </div>
-<div class="field row" >
+<div>
   <%= image_tag avatar_url(@user) %>
 </div>
-<div class="field row">
+<div>
   <h4><%= @user.name %></h4>
 </div>
-<div class="field row">
+<div>
   <strong>e-mail: </strong><%= @user.email %>
 </div>
-<div class="field row">
+<div>
   <h4>Badges</h4>
   <article class="badges">
     <% @user.badges.each do |badge| %>
@@ -20,7 +20,7 @@
     <% end %>
   </article>
 </div>
-<div class="field row">
+<div>
   <h4>Pontos</h4>
   <article class="points">
     <%= @user.points.last.value %>

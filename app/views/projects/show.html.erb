@@ -3,6 +3,9 @@
   <section class="eleven columns">
     <header>
       <div>
+        <span class="icons heart"></span>
+      </div>
+      <div>
         <%= image_tag(@project.image_url) if @project.image_url %>
       </div>
       <h4><%= @project.name %></h4>
@@ -39,15 +42,14 @@
     </p>
   </section>
   <aside class="five columns box-inset">
-    <div>
-      <span class="icons heart"></span>
-    </div>
     <div class="actions">
       <%= form_tag :controller => "backers", :action => "new" do %>
-          <%= hidden_field_tag :project_id, @project.id %>
-          <%= hidden_field_tag :user_id, current_user.id %>
-          <%= hidden_field_tag :reward_id %>
-          <%= hidden_field_tag :reward_value %>
+          <% if user_signed_in? %>
+            <%= hidden_field_tag :project_id, @project.id %>
+            <%= hidden_field_tag :user_id, current_user.id %>
+            <%= hidden_field_tag :reward_id %>
+            <%= hidden_field_tag :reward_value %>
+          <% end %>
           <p class="btn primary">
             <%= link_to_submit content_tag(:span, "Apoiar o projeto"), :class => "vai" %>
           </p>
@@ -55,7 +57,7 @@
     </div>
     <section class="projects-rewards">
       <% @rewards.each do |reward| %>
-        <div id="<%= reward.id %>" class="reward_<%= reward.id %>">
+        <div id="<%= reward.id %>" class="reward reward_<%= reward.id %>">
           <header>
             <strong data-attr="<%= reward.minimum_value %>">
               Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:

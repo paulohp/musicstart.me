@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @backer.project_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @backer.user_id %>
+</p>
+
+<p>
+  <b>Reward:</b>
+  <%= @backer.reward_id %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @backer.value %>
+</p>
+
+<p>
+  <b>Confirmed:</b>
+  <%= @backer.confirmed %>
+</p>
+
+
+<%= link_to 'Edit', edit_backer_path(@backer) %> |
+<%= link_to 'Back', backers_path %>

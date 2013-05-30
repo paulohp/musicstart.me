@@ -1,0 +1,31 @@
+<h1>Listing backers</h1>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>User</th>
+    <th>Reward</th>
+    <th>Value</th>
+    <th>Confirmed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @backers.each do |backer| %>
+  <tr>
+    <td><%= backer.project_id %></td>
+    <td><%= backer.user_id %></td>
+    <td><%= backer.reward_id %></td>
+    <td><%= backer.value %></td>
+    <td><%= backer.confirmed %></td>
+    <td><%= link_to 'Show', backer %></td>
+    <td><%= link_to 'Edit', edit_backer_path(backer) %></td>
+    <td><%= link_to 'Destroy', backer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Backer', new_backer_path %>

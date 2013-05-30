@@ -1,0 +1,37 @@
+<%= form_for(@backer) do |f| %>
+  <% if @backer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@backer.errors.count, "error") %> prohibited this backer from being saved:</h2>
+
+      <ul>
+      <% @backer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :project_id %><br />
+    <%= f.number_field :project_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :reward_id %><br />
+    <%= f.number_field :reward_id %>
+  </div>
+  <div class="field">
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmed %><br />
+    <%= f.check_box :confirmed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

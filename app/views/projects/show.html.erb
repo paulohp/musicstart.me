@@ -47,11 +47,15 @@
     </div>
     <div class="projects-rewards">
       <%= @rewards.each do |reward| %>
-        <strong>Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:</strong>
+        <header>
+          <strong>
+            Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:
+          </strong>
+        </header>
+        <article>
+          <%= reward.description %>
+        </article>
       <% end %>
     </div>
   </aside>
 </section>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>

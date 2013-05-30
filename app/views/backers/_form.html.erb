@@ -1,4 +1,8 @@
 <%= form_for(@backer) do |f| %>
+  <%= f.hidden_field :project_id, :value => params[:project_id] %>
+  <%= f.hidden_field :user_id, :value => params[:user_id] %>
+  <%= f.hidden_field :reward_id, :value => params[:reward_id] %>
+  <%= f.hidden_field :reward_value, :value => params[:reward_value] %>
   <% if @backer.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@backer.errors.count, "error") %> prohibited this backer from being saved:</h2>
@@ -10,23 +14,11 @@
       </ul>
     </div>
   <% end %>
+  <script>
+    alert('<%= params[:user_id] %>')
+  </script>
 
-  <div class="field">
-    <%= f.label :project_id %><br />
-    <%= f.number_field :project_id %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :reward_id %><br />
-    <%= f.number_field :reward_id %>
-  </div>
-  <div class="field">
-    <%= f.label :value %><br />
-    <%= f.text_field :value %>
-  </div>
+    <%= f.text_field :value, :value => params[:reward_value] %>
   <div class="field">
     <%= f.label :confirmed %><br />
     <%= f.check_box :confirmed %>

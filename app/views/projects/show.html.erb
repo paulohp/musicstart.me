@@ -47,6 +47,7 @@
           <%= hidden_field_tag :project_id, @project.id %>
           <%= hidden_field_tag :user_id, current_user.id %>
           <%= hidden_field_tag :reward_id %>
+          <%= hidden_field_tag :reward_value %>
           <p class="btn primary">
             <%= link_to_submit content_tag(:span, "Apoiar o projeto"), :class => "vai" %>
           </p>
@@ -56,7 +57,7 @@
       <% @rewards.each do |reward| %>
         <div id="<%= reward.id %>" class="reward_<%= reward.id %>">
           <header>
-            <strong>
+            <strong data-attr="<%= reward.minimum_value %>">
               Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:
             </strong>
           </header>
@@ -77,9 +78,11 @@
     $(this).removeClass('box');
   });
   div_hover.click(function(){
-    $(this).addClass('box-doido');
+    $(this).toggleClass('box-doido')
     var id = $(this).attr('id');
     $('#reward_id').val(id)
     alert($('#reward_id').val())
+    var valor = $(this).find('strong').attr('data-attr');
+    $('#reward_value').val(valor)
   });
 </script>

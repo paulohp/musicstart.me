@@ -10,6 +10,7 @@ MusicstartmeApp::Application.routes.draw do
 
   resources :projects
 
+  resources :backers
 
   get "pages/index"
 

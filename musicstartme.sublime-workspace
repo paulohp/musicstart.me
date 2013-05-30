@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"rewards"
+			],
+			[
 				"tex",
 				"text"
 			],
@@ -384,10 +388,6 @@
 				"current_user"
 			],
 			[
-				"re",
-				"registrations#update"
-			],
-			[
 				"si",
 				"sign"
 			],
@@ -520,68 +520,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/pages/_destaques.html.erb",
+			"file": "app/models/rewards.rb",
 			"settings":
 			{
-				"buffer_size": 1331,
+				"buffer_size": 141,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Searching 397 files for \".project\"\n\n/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss:\n   63      margin-top: 15px;\n   64    }\n   65:   .project{\n   66      .wrap-span{\n   67            display:block;\n\n/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.scss:\n   37      margin-top: 15px;\n   38    }\n   39:   .project{\n   40      .wrap-span{\n   41            display:block;\n   ..\n   89    }\n   90  }\n   91: .project-title{\n   92    line-height: 0.8;\n   93  }\n   94: .project-owner{\n   95    font-size: 0.8em;\n   96  }\n\n/projetos/rails/musicstartme-app/app/controllers/projects_controller.rb:\n   26    # GET /tasks/new.json\n   27    def new\n   28:     @project = current_user.projects.build\n   29  \n   30      respond_to do |format|\n   ..\n   36    # GET /tasks/1/edit\n   37    def edit\n   38:     @project = current_user.projects.find(params[:id])\n   39    end\n   40  \n   ..\n   42    # POST /tasks.json\n   43    def create\n   44:     @project = current_user.projects.build(params[:project])\n   45      @user = current_user\n   46      respond_to do |format|\n   ..\n   59    # PUT /tasks/1.json\n   60    def update\n   61:     @project = current_user.projects.find(params[:id])\n   62  \n   63      respond_to do |format|\n   ..\n   75    # DELETE /tasks/1.json\n   76    def destroy\n   77:     @project = current_user.projects.find(params[:id])\n   78      @project.destroy\n   79  \n\n/projetos/rails/musicstartme-app/app/controllers/users_controller.rb:\n    3    def show\n    4      @user = User.find(params[:id])\n    5:     @projects = @user.projects.order(\"updated_at DESC\")\n    6      respond_to do |format|\n    7        format.html\n\n10 matches across 4 files\n",
+			"file": "app/models/project.rb",
 			"settings":
 			{
-				"buffer_size": 1690,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "app/views/projects/_project.html.erb",
-			"settings":
-			{
-				"buffer_size": 2026,
+				"buffer_size": 753,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gemfile",
+			"file": "db/migrate/20130529235151_create_rewards.rb",
 			"settings":
 			{
-				"buffer_size": 874,
+				"buffer_size": 247,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gemfile.lock",
+			"file": "app/helpers/application_helper.rb",
 			"settings":
 			{
-				"buffer_size": 3891,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/projects.css.scss",
-			"settings":
-			{
-				"buffer_size": 1896,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/pages.css.scss",
-			"settings":
-			{
-				"buffer_size": 1147,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/pages/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 1689,
+				"buffer_size": 742,
 				"line_ending": "Unix"
 			}
 		}
@@ -634,6 +600,13 @@
 	},
 	"file_history":
 	[
+		"/projetos/rails/musicstartme-app/app/views/pages/index.html.erb",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss",
+		"/projetos/rails/musicstartme-app/Gemfile.lock",
+		"/projetos/rails/musicstartme-app/Gemfile",
+		"/projetos/rails/musicstartme-app/app/views/projects/_project.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/pages/_destaques.html.erb",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.scss",
 		"/projetos/rails/musicstartme-app/app/helpers/application_helper.rb",
 		"/projetos/rails/musicstartme-app/app/views/projects/_form.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/users/edit.html.erb",
@@ -647,10 +620,8 @@
 		"/projetos/rails/musicstartme-app/app/controllers/projects_controller.rb",
 		"/projetos/rails/musicstartme-app/app/controllers/users_controller.rb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/application.css",
-		"/projetos/rails/musicstartme-app/app/views/projects/_project.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/devise/registrations/new.html.erb",
 		"/projetos/rails/musicstartme-app/db/schema.rb",
-		"/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.scss",
 		"/home/paulo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/paulo/Área de Trabalho/person.b",
 		"/home/paulo/Área de Trabalho/person.java",
@@ -661,15 +632,11 @@
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/import12.css",
 		"/projetos/rails/musicstartme-app/app/controllers/pages_controller.rb",
 		"/projetos/rails/musicstartme-app/app/views/pages/_projetos_quase_acabando.html.erb",
-		"/projetos/rails/musicstartme-app/app/views/pages/_destaques.html.erb",
-		"/projetos/rails/musicstartme-app/app/views/pages/index.html.erb",
 		"/home/paulo/Área de Trabalho/naofaznada.java",
 		"/projetos/rails/musicstartme-app/app/views/layouts/_footer.html.erb",
 		"/projetos/rails/musicstartme-app/config/initializers/devise.rb",
 		"/projetos/rails/musicstartme-app/app/assets/javascripts/application.js",
-		"/projetos/rails/musicstartme-app/Gemfile",
 		"/projetos/rails/musicstartme-app/config/routes.rb",
-		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss",
 		"/projetos/rails/musicstartme-app/app/views/pages/_project.html.erb",
 		"/projetos/rails/musicstartme-app/app/admin/projects.rb",
 		"/projetos/rails/musicstartme-app/app/views/admin/projects/index.html.erb",
@@ -760,8 +727,7 @@
 		"/projetos/rails/smartconvites/app/views/cart/_cart.html.erb",
 		"/projetos/rails/smartconvites/app/models/cart.rb",
 		"/projetos/rails/smartconvites/app/models/cart_item.rb",
-		"/projetos/rails/smartconvites/db/migrate/20130227233512_create_cart_items.rb",
-		"/projetos/rails/smartconvites/app/views/admin/invitations/edit.html.erb"
+		"/projetos/rails/smartconvites/db/migrate/20130227233512_create_cart_items.rb"
 	],
 	"find":
 	{
@@ -1023,155 +989,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/pages/_destaques.html.erb",
+					"file": "app/models/rewards.rb",
 					"settings":
 					{
-						"buffer_size": 1331,
+						"buffer_size": 141,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1205,
-								1205
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"settings":
-					{
-						"buffer_size": 1690,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										157,
-										165
-									],
-									[
-										347,
-										355
-									],
-									[
-										445,
-										453
-									],
-									[
-										504,
-										512
-									],
-									[
-										712,
-										720
-									],
-									[
-										857,
-										865
-									],
-									[
-										994,
-										1002
-									],
-									[
-										1183,
-										1191
-									],
-									[
-										1346,
-										1354
-									],
-									[
-										1569,
-										1577
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								163,
-								163
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/projects/_project.html.erb",
-					"settings":
-					{
-						"buffer_size": 2026,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1976,
-								1976
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 874,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								874,
-								874
+								136,
+								136
 							]
 						],
 						"settings":
@@ -1185,24 +1019,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Gemfile.lock",
+					"buffer": 1,
+					"file": "app/models/project.rb",
 					"settings":
 					{
-						"buffer_size": 3891,
+						"buffer_size": 753,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3891,
-								3891
+								287,
+								287
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1211,76 +1045,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/assets/stylesheets/projects.css.scss",
+					"buffer": 2,
+					"file": "db/migrate/20130529235151_create_rewards.rb",
 					"settings":
 					{
-						"buffer_size": 1896,
+						"buffer_size": 247,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1635,
-								1635
+								161,
+								161
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1958.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/assets/stylesheets/pages.css.scss",
+					"buffer": 3,
+					"file": "app/helpers/application_helper.rb",
 					"settings":
 					{
-						"buffer_size": 1147,
+						"buffer_size": 742,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1147,
-								1147
+								640,
+								640
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 693.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/pages/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 1689,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								304,
-								304
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1340,6 +1148,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"app",
+				"app/helpers/application_helper.rb"
+			],
 			[
 				"pages/in",
 				"app/views/pages/index.html.erb"
@@ -1605,10 +1417,6 @@
 				"app/views/devise/shared/_links.erb"
 			],
 			[
-				"app",
-				"app/views/layouts/application.html.erb"
-			],
-			[
 				"config",
 				"config/application.rb"
 			],
@@ -1861,6 +1669,18 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"/projetos/rails/shirtfy/shirtfy.sublime-project"
+			],
+			[
+				"shi",
+				"/projetos/rails/shirtfy/shirtfy.sublime-project"
+			],
+			[
+				"shir",
+				"/projetos/rails/shirtfy/shirtfy.sublime-project"
+			],
+			[
 				"sh",
 				"/projetos/rails/shirtfy/shirtfy.sublime-project"
 			],
@@ -1882,10 +1702,6 @@
 			],
 			[
 				"sga",
-				"/projetos/rails/sga/sga.sublime-project"
-			],
-			[
-				"s",
 				"/projetos/rails/sga/sga.sublime-project"
 			],
 			[

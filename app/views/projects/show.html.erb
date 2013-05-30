@@ -42,6 +42,9 @@
     </p>
   </section>
   <aside class="five columns box-inset">
+    <div class="backers">
+      <%= @project.total_backers %>
+    </div>
     <div class="actions">
       <%= form_tag :controller => "backers", :action => "new" do %>
           <% if user_signed_in? %>

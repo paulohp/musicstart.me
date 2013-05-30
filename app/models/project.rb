@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
   belongs_to :users
   has_many :rewards
+  has_many :backers
   accepts_nested_attributes_for :rewards, allow_destroy: true
   attr_accessible :category, :decription, :headline, :name, :price, :soundcloud_url, :user_id, :approved, :image_url, :online_day, :rewards_attributes
 
@@ -15,6 +16,10 @@ class Project < ActiveRecord::Base
     else
       return user.name
     end
+  end
+
+  def total_backers
+    self.backers.size
   end
 
   def location

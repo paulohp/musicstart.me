@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130530011512) do
+ActiveRecord::Schema.define(:version => 20130530181246) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -107,6 +107,7 @@ ActiveRecord::Schema.define(:version => 20130530011512) do
     t.integer  "online_day"
     t.datetime "expires_at"
     t.boolean  "show_home"
+    t.integer  "backer_id"
   end
 
   create_table "rewards", :force => true do |t|

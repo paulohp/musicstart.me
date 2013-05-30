@@ -45,6 +45,11 @@
     <div>
       <button class="btn primary">Apoiar Esse Projeto</button>
     </div>
+    <div class="projects-rewards">
+      <%= @rewards.each do |reward| %>
+        <strong>Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:</strong>
+      <% end %>
+    </div>
   </aside>
 </section>
 

@@ -1,0 +1,10 @@
+<fieldset>
+  <%= f.label :minimum_value, "Valor Minimo" %>
+  <%= f.number_field :minimum_value, :class => "text"  %>
+  <%= f.label :maximum_backers, "Numero maximo de apoiadores" %>
+  <%= f.number_field :maximum_backers, :class => "text"  %>
+  <%= f.label :description, "Descrição" %>
+  <%= f.text_area :description, :class => "text"  %>
+  <%= f.check_box :_destroy %>
+  <%= f.label :_destroy, "Apagar" %>
+</fieldset>

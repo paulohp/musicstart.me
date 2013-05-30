@@ -550,6 +550,33 @@
 				"buffer_size": 742,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"contents": "ActiveAdmin.register Projects do\n\nend\n",
+			"file": "app/admin/projects.rb",
+			"file_size": 38,
+			"file_write_time": 1369871964000000,
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/admin/users.rb",
+			"settings":
+			{
+				"buffer_size": 34,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 2037,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/JSHint/JSHint.sublime-build",
@@ -989,7 +1016,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1084,6 +1111,84 @@
 							[
 								640,
 								640
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/admin/projects.rb",
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/admin/users.rb",
+					"settings":
+					{
+						"buffer_size": 34,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 2037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								152,
+								152
 							]
 						],
 						"settings":
@@ -1669,6 +1774,10 @@
 		"selected_items":
 		[
 			[
+				"",
+				"/projetos/rails/shirtfy/shirtfy.sublime-project"
+			],
+			[
 				"s",
 				"/projetos/rails/shirtfy/shirtfy.sublime-project"
 			],
@@ -1687,10 +1796,6 @@
 			[
 				"sm",
 				"/projetos/rails/smartconvites/smartconvites.sublime-project"
-			],
-			[
-				"",
-				"/projetos/rails/tasklist/_octo.sublime-project"
 			],
 			[
 				"_oc",

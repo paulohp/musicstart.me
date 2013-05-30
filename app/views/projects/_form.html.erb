@@ -1,5 +1,5 @@
-<section class="seven columns">
-  <%= form_for(@project, :multipart => true) do |f| %>
+<%= form_for(@project, :multipart => true) do |f| %>
+  <section class="ten columns">
     <% if @project.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -53,5 +53,19 @@
         <%= link_to 'Cancelar', projects_path %>
       </p>
     </div>
-  <% end %>
+
+  </section>
+  <section class="box five columns">
+    <ul><strong>Guidelines</strong>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eligendi, architecto, dolor iste quos cum cupiditate omnis sed autem atque quis sunt.</li>
+      <li>Esse, dolorem, maxime, ad magnam illum nemo qui animi officia nisi consectetur similique dolore facilis ratione reiciendis eos molestias enim maiores quos unde provident velit error ipsam obcaecati sed natus.</li>
+      <li>Exercitationem, quae, eveniet quo aliquid natus in ea soluta totam dignissimos molestiae dicta pariatur nam reiciendis ex fugiat eos voluptatem eius debitis!</li>
+    </ul>
+    <div class="rewards">
+      <%= link_to_add_fields "Adicionar Recompensa", f, :rewards %>
+      <%= f.fields_for :rewards do |builder| %>
+        <%= render 'reward_fields', f: builder %>
+      <% end %>
+    </div>
 </section>
+<% end %>

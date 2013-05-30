@@ -113,8 +113,21 @@ form{
   height:50px;
   background:orange;
 }
+/*Começa as recompensas*/
 .rewards{
   fieldset{
     border:none;
+  }
+}
+.projects-rewards{
+  div{
+    padding: 20px;
+    cursor: pointer;
+  }
+  .box-doido{
+    background-color: #f5f5f5;
+    border-radius:4px;
+    box-shadow: 2px 1px 1px $green;
+    padding: 20px;
   }
 }

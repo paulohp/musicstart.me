@@ -42,20 +42,44 @@
     <div>
       <span class="icons heart"></span>
     </div>
-    <div>
-      <button class="btn primary">Apoiar Esse Projeto</button>
+    <div class="actions">
+      <%= form_tag :controller => "backers", :action => "new" do %>
+          <%= hidden_field_tag :project_id, @project.id %>
+          <%= hidden_field_tag :user_id, current_user.id %>
+          <%= hidden_field_tag :reward_id %>
+          <p class="btn primary">
+            <%= link_to_submit content_tag(:span, "Apoiar o projeto"), :class => "vai" %>
+          </p>
+        <% end %>
     </div>
-    <div class="projects-rewards">
-      <%= @rewards.each do |reward| %>
-        <header>
-          <strong>
-            Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:
-          </strong>
-        </header>
-        <article>
-          <%= reward.description %>
-        </article>
+    <section class="projects-rewards">
+      <% @rewards.each do |reward| %>
+        <div id="<%= reward.id %>" class="reward_<%= reward.id %>">
+          <header>
+            <strong>
+              Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:
+            </strong>
+          </header>
+          <article>
+            <%= reward.description %>
+          </article>
+        </div>
       <% end %>
-    </div>
+    </section>
   </aside>
 </section>
+<script>
+  div_hover = $('.projects-rewards div')
+  div_hover.hover(function(){
+    $(this).addClass('box');
+  },
+  function(){
+    $(this).removeClass('box');
+  });
+  div_hover.click(function(){
+    $(this).addClass('box-doido');
+    var id = $(this).attr('id');
+    $('#reward_id').val(id)
+    alert($('#reward_id').val())
+  });
+</script>

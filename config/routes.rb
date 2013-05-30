@@ -1,10 +1,6 @@
 MusicstartmeApp::Application.routes.draw do
 
-
-  resources :backers
-
-
-  ActiveAdmin.routes(self)
+ ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
@@ -14,8 +10,10 @@ MusicstartmeApp::Application.routes.draw do
 
   resources :projects
 
+
   get "pages/index"
 
+  post "backers/new"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

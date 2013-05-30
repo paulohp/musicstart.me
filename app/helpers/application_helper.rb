@@ -8,6 +8,10 @@ module ApplicationHelper
     link_to_function text, "$('#{finder}').submit()"
   end
 
+  def link_to_submit text, args
+    link_to_function text, "$(this).closest('form').submit()", args
+  end
+
   def cancel_form text, local
     link_to_function text, "window.redirect = #{local}"
   end

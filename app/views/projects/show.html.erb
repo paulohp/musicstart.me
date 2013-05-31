@@ -17,7 +17,6 @@
     </p>
 
     <p>
-      <b>Headline:</b>
       <%= @project.headline %>
     </p>
 
@@ -26,20 +25,6 @@
       <%= @project.decription %>
     </p>
 
-    <p>
-      <b>Soundcloud url:</b>
-      <%= @project.soundcloud_url %>
-    </p>
-
-    <p>
-      <b>User:</b>
-      <%= @project.owner %>
-    </p>
-
-    <p>
-      <b>Price:</b>
-      <%= @project.price %>
-    </p>
   </section>
   <aside class="five columns box-inset">
     <div class="backers">
@@ -75,17 +60,20 @@
       </header>
 
     </div>
-    <div class="user_profile" style="display:table">
+    <div class="user_profile">
       <header>
         <div class="user_avatar">
           <%= image_tag avatar_url(@user) %>
         </div>
-        <div class="user_infos" style="float: left;">
+        <div class="user_infos">
           <small>projeto por</small>
           <span><%= @user.name %></span>
           <span><%= @user.location %></span>
         </div>
       </header>
+      <article>
+
+      </article>
     </div>
     <section class="projects-rewards">
       <header>
@@ -120,7 +108,6 @@
     $(this).toggleClass('box-doido')
     var id = $(this).attr('id');
     $('#reward_id').val(id)
-    alert($('#reward_id').val())
     var valor = $(this).find('strong').attr('data-attr');
     $('#reward_value').val(valor)
   });

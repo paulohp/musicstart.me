@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $blue: #4383d1;
-$minimal_blue: #6498D8;
+$minimal_blue: #6498F8;
 
 $green: #59aF6d;
 $dark_green: #284f31;
@@ -115,15 +115,21 @@ form{
 }
 /*usuario*/
 .user_profile{
+  background:$minimal_blue;
   display:table;
+  padding:5px;
+  border-radius:4px;
+  box-shadow: 1px 2px 3px #c0c0c0;
   header{
     border-bottom:1px dashed grey;
+    display: table-cell;
     .user_avatar{
       float: left;margin:0px 5px 5px 0px;
     }
     .user_infos{
       float: left;
-      width:155px;
+      width:145px;
+      color:#fff;
       span{
         display:block;
       }

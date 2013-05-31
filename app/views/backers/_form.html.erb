@@ -2,7 +2,7 @@
   <%= f.hidden_field :project_id, :value => params[:project_id] %>
   <%= f.hidden_field :user_id, :value => params[:user_id] %>
   <%= f.hidden_field :reward_id, :value => params[:reward_id] %>
-  <%= f.hidden_field :reward_value, :value => params[:reward_value] %>
+  <%= f.hidden_field :value, :value => params[:reward_value] %>
   <% if @backer.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@backer.errors.count, "error") %> prohibited this backer from being saved:</h2>

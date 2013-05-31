@@ -37,7 +37,7 @@
     </div>
     <div class="total_pleged">
       <header>
-        <h4></h4>
+        <h4><%= number_to_currency @project.backers.map(&:value).inject(:+).to_f %></h4>
       </header>
       <article>de <%= number_to_currency @project.price %> pedidos</article>
     </div>

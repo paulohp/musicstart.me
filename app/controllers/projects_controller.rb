@@ -16,6 +16,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     @rewards = @project.rewards
+    @user = User.find(@project.user_id)
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @project }

@@ -43,9 +43,19 @@
   </section>
   <aside class="five columns box-inset">
     <div class="backers">
-      <%= @project.total_backers %>
+      <header>
+        <h4><%= @project.total_backers %></h4>
+      </header>
+      <article>
+        <span>apoiadores</span>
+      </article>
     </div>
-
+    <div class="total_pleged">
+      <header>
+        <h4></h4>
+      </header>
+      <article>de <%= number_to_currency @project.price %> pedidos</article>
+    </div>
     <div class="actions">
       <%= form_tag :controller => "backers", :action => "new" do %>
           <% if user_signed_in? %>
@@ -63,9 +73,19 @@
       <header>
         <h4>Soundcloud</h4>
       </header>
-      <article>
-        <%= @project.soundcloud_player.html_safe %>
-      </article>
+
+    </div>
+    <div class="user_profile" style="display:table">
+      <header>
+        <div class="user_avatar">
+          <%= image_tag avatar_url(@user) %>
+        </div>
+        <div class="user_infos" style="float: left;">
+          <small>projeto por</small>
+          <span><%= @user.name %></span>
+          <span><%= @user.location %></span>
+        </div>
+      </header>
     </div>
     <section class="projects-rewards">
       <header>

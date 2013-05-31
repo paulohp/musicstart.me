@@ -113,6 +113,23 @@ form{
   height:50px;
   background:orange;
 }
+/*usuario*/
+.user_profile{
+  display:table;
+  header{
+    border-bottom:1px dashed grey;
+    .user_avatar{
+      float: left;margin:0px 5px 5px 0px;
+    }
+    .user_infos{
+      float: left;
+      width:155px;
+      span{
+        display:block;
+      }
+    }
+  }
+}
 /*Começa as recompensas*/
 .rewards{
   fieldset{

@@ -1,10 +1,3 @@
-<div>
-  <% if user_signed_in? %>
-    <p class="btn tertiary">
-      <%= link_to 'Novo Projeto', new_project_path %>
-    </p>
-  <% end %>
-</div>
 <section id="projects">
   <% @projects.each do |project| %>
     <div class="box project five columns">

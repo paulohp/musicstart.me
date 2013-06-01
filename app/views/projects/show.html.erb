@@ -37,9 +37,9 @@
     </div>
     <div class="total_pleged">
       <header>
-        <h4><%= number_to_currency @project.backers.map(&:value).inject(:+).to_f %></h4>
+        <h4><%= number_to_currency(@project.backers.map(&:value).inject(:+).to_f, :unit => "R$")%></h4>
       </header>
-      <article>de <%= number_to_currency @project.price %> pedidos</article>
+      <article>de <%= number_to_currency(@project.price, :unit => "R$")%> pedidos</article>
     </div>
     <div class="actions">
       <%= form_tag :controller => "backers", :action => "new" do %>
@@ -84,7 +84,7 @@
           <div id="<%= reward.id %>" class="reward reward_<%= reward.id %>">
             <header>
               <strong data-attr="<%= reward.minimum_value %>">
-                Apoiar com <%= number_to_currency(reward.minimum_value)%> ou mais:
+                Apoiar com <%= number_to_currency(reward.minimum_value, :unit => "R$")%> ou mais:
               </strong>
             </header>
             <article>

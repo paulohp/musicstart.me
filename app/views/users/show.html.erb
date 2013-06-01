@@ -1,32 +1,40 @@
-<div class="field">
+<section class="user_admin_controls">
   <p class="btn oval small tertiary">
     <%= link_to 'Novo Projeto', new_project_path %>
   </p>
   <p class="btn oval small tertiary">
     <%= link_to "Editar Perfil", edit_user_path %>
   </p>
-</div>
-<div>
-  <%= image_tag avatar_url(@user) %>
-</div>
-<div>
-  <h4><%= @user.name %></h4>
-</div>
-<div>
-  <strong>e-mail: </strong><%= @user.email %>
-</div>
-<div>
-  <h4>Badges</h4>
-  <article class="badges">
-    <% @user.badges.each do |badge| %>
-      <%= badge.name %>
-    <% end %>
-  </article>
-</div>
-<div>
-  <h4>Pontos</h4>
-  <article class="points">
-    <%= @user.points.last.value %>
-  </article>
-</div>
-<%= render 'projects/project' %>
+</section>
+<section class="user_main_infos five columns">
+  <div>
+    <%= image_tag avatar_url(@user) %>
+  </div>
+  <div>
+    <h4><%= @user.name %></h4>
+  </div>
+  <div>
+    <%= @user.email %>
+  </div>
+  <div>
+    <i class="icons location"></i>
+    <span><%= @user.location %></span>
+  </div>
+  <div>
+    <h4>Badges</h4>
+    <article class="badges">
+      <% @user.badges.each do |badge| %>
+        <%= badge.name %>
+      <% end %>
+    </article>
+  </div>
+  <div>
+    <h4>Pontos</h4>
+    <article class="points">
+      <%= @user.points.last.value %>
+    </article>
+  </div>
+</section>
+<section class="ten columns">
+  <%= render 'projects/project' %>
+</section>

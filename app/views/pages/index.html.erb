@@ -1,9 +1,19 @@
 <!-- banner -->
-<section class="banner">
-  <article class="left banner-container"></article>
-  <aside class="right banner-aside">
-    <strong>Olá, sou um banner!</strong>
-  </aside>
+<section class="banner slider">
+  <div class="sliderContent">
+    <% @projects_in_home.each do |project| %>
+    <div class="featured-inner">
+      <%=link_to project do %>
+        <article class="left banner-container featured-inner">
+          <%= image_tag(project.image_url.thumb.url) if project.image_url %>
+        </article>
+        <aside class="right banner-aside featured-meta">
+          <strong><%= project.headline %></strong>
+        </aside>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
 </section>
 <!-- fim banner -->
 
@@ -69,3 +79,21 @@
 
   </article>
 </section>
+<script type="text/javascript">
+    $(function(){
+
+      $('.slider').mobilyslider({
+        content: '.sliderContent',
+        children: 'div',
+        transition: 'fade',
+        animationSpeed: 500,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
+        bullets: false,
+        arrows: true,
+        animationStart: function(){},
+        animationComplete: function(){}
+      });
+    });
+  </script>

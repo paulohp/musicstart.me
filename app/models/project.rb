@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
   belongs_to :users
-  has_many :rewards
-  has_many :backers
+  has_many :rewards, :dependent => :destroy
+  has_many :backers, :dependent => :destroy
   accepts_nested_attributes_for :rewards, allow_destroy: true
   attr_accessible :category, :decription, :headline, :name, :price, :soundcloud_url, :user_id, :approved, :image_url, :online_day, :rewards_attributes
 
@@ -20,6 +20,10 @@ class Project < ActiveRecord::Base
 
   def total_backers
     self.backers.size
+  end
+
+  def total_pleged
+    self.backers.map(&:value).inject(:+).to_f
   end
 
   def soundcloud_player
@@ -48,7 +52,7 @@ class Project < ActiveRecord::Base
     if successful?
       "100%"
     else
-      "20%"
+      "#{rand(1..100)}%"
     end
   end
 end

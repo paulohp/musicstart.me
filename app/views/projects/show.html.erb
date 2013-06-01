@@ -37,7 +37,7 @@
     </div>
     <div class="total_pleged">
       <header>
-        <h4><%= number_to_currency(@project.backers.map(&:value).inject(:+).to_f, :unit => "R$")%></h4>
+        <h4><%= number_to_currency(@project.total_pleged, :unit => "R$")%></h4>
       </header>
       <article>de <%= number_to_currency(@project.price, :unit => "R$")%> pedidos</article>
     </div>
@@ -80,6 +80,13 @@
         <h4>Recompensas</h4>
       </header>
       <article>
+        <div class="no-reward reward">
+          <header>
+            <strong data-attr="1">
+              Não quero recompensas!
+            </strong>
+          </header>
+        </div>
         <% @rewards.each do |reward| %>
           <div id="<%= reward.id %>" class="reward reward_<%= reward.id %>">
             <header>

@@ -91,6 +91,8 @@ form{
 }
 .project-title{
   line-height: 0.8;
+  color:#333;
+  display:block;
 }
 .project-owner{
   font-size: 0.8em;
@@ -157,4 +159,55 @@ form{
     box-shadow: 2px 1px 1px $green;
     padding: 20px;
   }
+}
+.slider {
+  position:relative;
+  z-index:1;
+}
+.sliderContent {
+  overflow:hidden;
+  height:270px;
+  position:relative;
+}
+.featured-inner {
+  margin:0 auto;
+  position:relative;
+  img{
+    width:960px;
+    height:270px
+  }
+}
+.featured-meta {
+  right:0;
+  position:absolute;
+  color:#8e8e8e;
+  text-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+  padding:8px 10px 0 10px;
+}
+.sliderArrows a {
+  display:block;
+  text-indent:-9999px;
+  outline:none;
+  z-index:50;
+  background-image:url(/assets/prev_next.png);
+  width:42px;
+  height:43px;
+  position:absolute;
+  top:50%;
+  margin-top:-34px;
+}
+.prev {
+  background-position:0 0;
+  left:10px;
+}
+.prev:hover {
+  background-position:0 -44px;
+}
+.next {
+  right:10px;
+  background-position:-44px 0;
+}
+.next:hover {
+  background-position:-44px -44px;
 }

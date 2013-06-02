@@ -36,5 +36,16 @@
   </div>
 </section>
 <section class="ten columns">
-  <%= render 'projects/project' %>
+  <header>
+    <h4>Projetos</h4>
+  </header>
+  <article class="field">
+    <% @projects.each do |project| %>
+      <div class="box-inset">
+        <span><%= project.name %></span>
+        <i class="icons location"></i>
+        <span><%= project.total_backers %></span>
+      </div>
+    <% end %>
+  </article>
 </section>

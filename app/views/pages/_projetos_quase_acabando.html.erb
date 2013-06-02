@@ -1,28 +1,40 @@
 <% @projectos_quase_acabando.each do |project| %>
-  <div class="box-inset project eight columns">
-    <header>
-      <div>
-        <%= image_tag(project.image_url.thumb.url) if project.image_url %>
-      </div>
-      <h4><%= project.name %></h4>
-    </header>
-    <article>
-      <label><strong>Categoria:</strong></label>
-      <span><%= project.category %></span><br>
-      <label><strong>Headline:</strong></label>
-      <span><%= project.headline %></span><br>
-      <label><strong>Objetivo:</strong></label>
-      <span><%= project.price %></span><br>
-      <div class="info_bar">
-        <div class="status_bar">
-          <div class="progress" style="width:#{project.status_progress}"></div>
-        </div>
-        <section class="icons">
-          <%= link_to project.soundcloud_url do %>
-            <div class="soundcloud"></div>
-          <% end %>
-        </section>
-      </div>
-    </article>
+  <div class="box-inset project five columns">
+    <%= link_to "projects/#{project.id}" do%>
+      <header>
+          <div>
+            <%= image_tag(project.image_url.thumb.url) if project.image_url %>
+          </div>
+          <h5 class="project-title"><%= project.name %></h5>
+          <span class="project-owner">by <%=project.owner%></span>
+        </header>
+        <article>
+          <span class="wrap-span">
+            <%= project.description %>
+          </span>
+          <div class="project_location">
+            <i class="icons location"></i>
+            <span>
+              <%= project.location %>
+            </span>
+          </div>
+          <div class="info_bar box-inset" style="clear:both;float:left">
+            <div class="status_bar">
+              <div class="progress" style="width:<%=project.status_progress%>"></div>
+            </div>
+            <section class="more">
+              <div class="box left">
+                <span>financiado</span>
+              </div>
+              <div class="box left">
+                <span>arrecadado</span>
+              </div>
+              <div class="box left">
+                <span>para acabar</span>
+              </div>
+            </section>
+          </div>
+        </article>
+    <% end %>
   </div>
 <% end %>

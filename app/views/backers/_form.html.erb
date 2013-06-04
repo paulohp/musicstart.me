@@ -17,9 +17,6 @@
           </ul>
         </div>
       <% end %>
-      <script>
-        alert('<%= params[:user_id] %>')
-      </script>
       <div class="field row">
         <%= f.text_field :value, :value => params[:reward_value], :class => 'text' %>
       </div>
@@ -28,7 +25,32 @@
       </div>
     <% end %>
     <%= link_to 'Back', backers_path %>
-
+    <div class="projects-rewards">
+      <header>
+        <h4>Selecione sua recompensa:</h4>
+      </header>
+      <article>
+        <div class="no-reward reward">
+          <header>
+            <strong data-attr="1">
+              Não quero recompensas!
+            </strong>
+          </header>
+        </div>
+        <% @rewards.each do |reward| %>
+          <div id="<%= reward.id %>" class="reward reward_<%= reward.id %>">
+              <header>
+                <strong data-attr="<%= reward.minimum_value %>">
+                  Apoiar com <%= number_to_currency(reward.minimum_value, :unit => "R$")%> ou mais:
+                </strong>
+              </header>
+              <article>
+                <%= reward.description %>
+              </article>
+            </div>
+        <% end %>
+      </article>
+    </div>
   </section>
   <section class="aside-backers four columns">
     <div class="box">
@@ -44,3 +66,19 @@
     </div>
   </section>
 </section>
+<script>
+  div_hover = $('.projects-rewards div')
+  div_hover.hover(function(){
+    $(this).addClass('box');
+  },
+  function(){
+    $(this).removeClass('box');
+  });
+  div_hover.click(function(){
+    $(this).toggleClass('box-doido')
+    var id = $(this).attr('id');
+    $('#reward_id').val(id)
+    var valor = $(this).find('strong').attr('data-attr');
+    $('#reward_value').val(valor)
+  });
+</script>

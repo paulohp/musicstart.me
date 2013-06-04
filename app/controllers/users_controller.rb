@@ -4,6 +4,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @projects = @user.projects.order("updated_at DESC")
     @backers = @user.backers
+    @badges_limited = @user.badges.limit 3
 
     respond_to do |format|
       format.html

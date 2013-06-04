@@ -23,7 +23,7 @@
   <div>
     <h4>Badges</h4>
     <article class="badges">
-      <% @user.badges.each do |badge| %>
+      <% @badges_limited.each do |badge| %>
         <%= badge.name %>
       <% end %>
     </article>

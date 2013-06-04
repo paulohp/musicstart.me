@@ -4,16 +4,52 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"inj	inject(init) { |mem, var| .. }"
+			],
+			[
+				"fom",
+				"format"
+			],
+			[
+				"proj",
+				"projetos"
+			],
+			[
+				"proje",
+				"project_id"
+			],
+			[
+				"bac",
+				"backer"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"rew",
+				"reward"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"des",
+				"destroy"
+			],
+			[
+				"rewa",
+				"rewards"
+			],
+			[
 				"au",
 				"authenticate_user"
 			],
 			[
 				"soun",
 				"soundcloud_player"
-			],
-			[
-				"proj",
-				"projeto"
 			],
 			[
 				"tota",
@@ -60,24 +96,12 @@
 				"location"
 			],
 			[
-				"des",
-				"description"
-			],
-			[
 				"use",
 				"user"
 			],
 			[
 				"hea",
 				"heart"
-			],
-			[
-				"bac",
-				"background"
-			],
-			[
-				"proje",
-				"projects"
 			],
 			[
 				"op",
@@ -110,10 +134,6 @@
 			[
 				"on",
 				"online_day"
-			],
-			[
-				"te",
-				"text_field"
 			],
 			[
 				"st",
@@ -212,20 +232,12 @@
 				"strokeStyle"
 			],
 			[
-				"font",
-				"fontStyle"
-			],
-			[
 				"act",
 				"activeObject"
 			],
 			[
 				"be",
 				"beforeSend"
-			],
-			[
-				"in",
-				"invitation"
 			],
 			[
 				"sub",
@@ -502,84 +514,24 @@
 			[
 				"_",
 				"_name"
-			],
-			[
-				"con",
-				"confirm"
-			],
-			[
-				"pa",
-				"pathSVG"
-			],
-			[
-				"can",
-				"canvas"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/controllers/users_controller.rb",
+			"contents": "<!--<article>\n  <%= #@project.soundcloud_player.html_safe %>\n</article>-->",
 			"settings":
 			{
-				"buffer_size": 693,
+				"buffer_size": 74,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/pages/_destaques.html.erb",
+			"file": "app/views/projects/_project.html.erb",
 			"settings":
 			{
-				"buffer_size": 1332,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/pages_controller.rb",
-			"settings":
-			{
-				"buffer_size": 413,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/pages/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 2502,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/pages/_projetos_novos.html.erb",
-			"settings":
-			{
-				"buffer_size": 1330,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/pages/_projetos_quase_acabando.html.erb",
-			"settings":
-			{
-				"buffer_size": 1340,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/projects/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 3212,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!--<article>\n        <%= #@project.soundcloud_player.html_safe %>\n      </article>-->",
-			"settings":
-			{
-				"buffer_size": 86,
+				"buffer_size": 1359,
 				"line_ending": "Unix"
 			}
 		}
@@ -632,36 +584,45 @@
 	},
 	"file_history":
 	[
+		"/projetos/rails/musicstartme-app/app/views/backers/new.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/pages/index.html.erb",
+		"/projetos/rails/musicstartme-app/app/controllers/pages_controller.rb",
+		"/projetos/rails/musicstartme-app/app/views/projects/show.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/backers/_form.html.erb",
+		"/projetos/rails/musicstartme-app/app/models/reward.rb",
+		"/projetos/rails/musicstartme-app/app/models/user.rb",
+		"/projetos/rails/musicstartme-app/app/controllers/users_controller.rb",
+		"/projetos/rails/musicstartme-app/app/controllers/projects_controller.rb",
+		"/projetos/rails/musicstartme-app/app/views/users/show.html.erb",
+		"/projetos/rails/musicstartme-app/app/models/project.rb",
+		"/projetos/rails/musicstartme-app/app/models/backer.rb",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/backers.css.sass",
+		"/projetos/rails/musicstartme-app/app/controllers/backers_controller.rb",
+		"/projetos/rails/musicstartme-app/app/views/pages/_projetos_novos.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/pages/_projetos_quase_acabando.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/pages/_destaques.html.erb",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/backers.css.scss",
+		"/projetos/rails/musicstartme-app/app/admin/backers.rb",
+		"/projetos/rails/musicstartme-app/config/routes.rb",
 		"/projetos/rails/musicstartme-app/app/views/projects/_project.html.erb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/users.css.sass",
-		"/projetos/rails/musicstartme-app/app/views/users/show.html.erb",
-		"/projetos/rails/musicstartme-app/config/routes.rb",
 		"/projetos/rails/musicstartme-app/app/helpers/application_helper.rb",
-		"/projetos/rails/musicstartme-app/app/models/project.rb",
 		"/projetos/rails/musicstartme-app/app/views/layouts/application.html.erb",
-		"/projetos/rails/musicstartme-app/app/controllers/projects_controller.rb",
-		"/projetos/rails/musicstartme-app/app/controllers/backers_controller.rb",
 		"/projetos/rails/musicstartme-app/app/models/rewards.rb",
-		"/projetos/rails/musicstartme-app/app/models/reward.rb",
 		"/projetos/rails/musicstartme-app/db/migrate/20130529235151_create_rewards.rb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/users.css.scss",
-		"/projetos/rails/musicstartme-app/app/admin/backers.rb",
 		"/projetos/rails/musicstartme-app/app/admin/users.rb",
 		"/projetos/rails/musicstartme-app/app/admin/projects.rb",
-		"/projetos/rails/musicstartme-app/app/views/pages/index.html.erb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss",
 		"/projetos/rails/musicstartme-app/Gemfile.lock",
 		"/projetos/rails/musicstartme-app/Gemfile",
-		"/projetos/rails/musicstartme-app/app/views/pages/_destaques.html.erb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.scss",
 		"/projetos/rails/musicstartme-app/app/views/projects/_form.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/users/edit.html.erb",
 		"/projetos/rails/musicstartme-app/app/helpers/projects_helper.rb",
 		"/projetos/rails/musicstartme-app/musicstartme.sublime-workspace",
-		"/projetos/rails/musicstartme-app/app/models/user.rb",
 		"/projetos/rails/musicstartme-app/app/views/projects/index.html.erb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/ui.css",
-		"/projetos/rails/musicstartme-app/app/controllers/users_controller.rb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/application.css",
 		"/projetos/rails/musicstartme-app/app/views/devise/registrations/new.html.erb",
 		"/projetos/rails/musicstartme-app/db/schema.rb",
@@ -669,11 +630,8 @@
 		"/home/paulo/Área de Trabalho/person.b",
 		"/home/paulo/Área de Trabalho/person.java",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/text.css",
-		"/projetos/rails/musicstartme-app/app/views/projects/show.html.erb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/imports.css",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/import12.css",
-		"/projetos/rails/musicstartme-app/app/controllers/pages_controller.rb",
-		"/projetos/rails/musicstartme-app/app/views/pages/_projetos_quase_acabando.html.erb",
 		"/home/paulo/Área de Trabalho/naofaznada.java",
 		"/projetos/rails/musicstartme-app/app/views/layouts/_footer.html.erb",
 		"/projetos/rails/musicstartme-app/config/initializers/devise.rb",
@@ -753,13 +711,7 @@
 		"/projetos/rails/smartconvites/app/controllers/registrations_controller.rb",
 		"/projetos/rails/smartconvites/app/assets/javascripts/fabricjs.js",
 		"/projetos/rails/smartconvites/app/assets/stylesheets/style.css",
-		"/projetos/rails/smartconvites/app/models/user_card.rb",
-		"/projetos/rails/smartconvites/config/initializers/devise.rb",
-		"/projetos/rails/smartconvites/app/assets/javascripts/application.js",
-		"/projetos/rails/smartconvites/config/initializers/app_keys.rb",
-		"/projetos/rails/smartconvites/app/helpers/moip_helper.rb",
-		"/projetos/rails/smartconvites/db/migrate/20130301013416_create_users.rb",
-		"/projetos/rails/smartconvites/db/migrate/20130301013521_add_devise_to_users.rb"
+		"/projetos/rails/smartconvites/app/models/user_card.rb"
 	],
 	"find":
 	{
@@ -1021,28 +973,27 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/users_controller.rb",
 					"settings":
 					{
-						"buffer_size": 693,
+						"buffer_size": 74,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								149,
-								149
+								74,
+								74
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1052,18 +1003,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/pages/_destaques.html.erb",
+					"file": "app/views/projects/_project.html.erb",
 					"settings":
 					{
-						"buffer_size": 1332,
+						"buffer_size": 1359,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1322,
-								1322
+								1290,
+								1290
 							]
 						],
 						"settings":
@@ -1071,162 +1022,7 @@
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/pages_controller.rb",
-					"settings":
-					{
-						"buffer_size": 413,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								264,
-								264
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/pages/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 2502,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2065,
-								2065
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1479.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/pages/_projetos_novos.html.erb",
-					"settings":
-					{
-						"buffer_size": 1330,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9,
-								9
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/pages/_projetos_quase_acabando.html.erb",
-					"settings":
-					{
-						"buffer_size": 1340,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								28,
-								28
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/projects/show.html.erb",
-					"settings":
-					{
-						"buffer_size": 3212,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1606,
-								1606
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1036.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"settings":
-					{
-						"buffer_size": 86,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								86,
-								86
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 148.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1284,8 +1080,60 @@
 		"selected_items":
 		[
 			[
+				"_proj",
+				"app/views/projects/_project.html.erb"
+			],
+			[
+				"users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"users/s",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"proj",
+				"app/models/project.rb"
+			],
+			[
+				"sh",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"proje",
+				"app/controllers/projects_controller.rb"
+			],
+			[
 				"backer",
+				"app/models/backer.rb"
+			],
+			[
+				"rew",
+				"app/models/reward.rb"
+			],
+			[
+				"bac",
 				"app/controllers/backers_controller.rb"
+			],
+			[
+				"backers/new",
+				"app/views/backers/new.html.erb"
+			],
+			[
+				"ba",
+				"app/admin/backers.rb"
+			],
+			[
+				"backers/",
+				"app/views/backers/_form.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
 			],
 			[
 				"app",
@@ -1298,10 +1146,6 @@
 			[
 				"pa",
 				"app/controllers/pages_controller.rb"
-			],
-			[
-				"proj",
-				"app/models/project.rb"
 			],
 			[
 				"show",
@@ -1324,32 +1168,12 @@
 				"app/controllers/pages_controller.rb"
 			],
 			[
-				"proje",
-				"app/controllers/projects_controller.rb"
-			],
-			[
 				"des",
 				"app/views/pages/_destaques.html.erb"
 			],
 			[
-				"_proj",
-				"app/views/projects/_project.html.erb"
-			],
-			[
-				"users",
-				"app/controllers/users_controller.rb"
-			],
-			[
 				"_pro",
 				"app/views/projects/_project.html.erb"
-			],
-			[
-				"user",
-				"app/assets/stylesheets/users.css.scss"
-			],
-			[
-				"users/s",
-				"app/views/users/show.html.erb"
 			],
 			[
 				"pages/in",
@@ -1378,10 +1202,6 @@
 			[
 				"ap",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			],
 			[
 				"sch",
@@ -1770,30 +1590,6 @@
 			[
 				"view",
 				"afimdetrocar.com.br/app/View/Users/view.ctp"
-			],
-			[
-				"hom",
-				"afimdetrocar.com.br/app/View/Products/home.ctp"
-			],
-			[
-				"sea",
-				"afimdetrocar.com.br/app/View/Elements/search.ctp"
-			],
-			[
-				"de",
-				"afimdetrocar.com.br/app/View/Layouts/default.ctp"
-			],
-			[
-				"minh",
-				"afimdetrocar.com.br/app/View/Products/minhas.ctp"
-			],
-			[
-				"qui",
-				"afimdetrocar.com.br/app/View/Elements/form_products_quick.ctp"
-			],
-			[
-				"style",
-				"afimdetrocar.com.br/app/webroot/css/style.css"
 			]
 		],
 		"width": 0.0

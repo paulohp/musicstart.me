@@ -77,8 +77,11 @@
   div_hover.click(function(){
     $(this).toggleClass('box-doido')
     var id = $(this).attr('id');
-    $('#reward_id').val(id)
+    alert(id);
+    $('#backer_reward_id').val(id)
     var valor = $(this).find('strong').attr('data-attr');
-    $('#reward_value').val(valor)
+    alert(valor);
+    $('#backer_value').val(valor)
+    $('#backers .text').val(valor).text(valor)
   });
 </script>

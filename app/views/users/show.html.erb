@@ -37,7 +37,7 @@
 </section>
 <section class="ten columns">
   <header>
-    <h4>Projetos</h4>
+    <h4>Meus Projetos</h4>
   </header>
   <article class="field">
     <% @projects.each do |project| %>
@@ -45,6 +45,21 @@
         <span><%= project.name %></span>
         <i class="icons location"></i>
         <span><%= project.total_backers %></span>
+      </div>
+    <% end %>
+  </article>
+</section>
+<section class="ten columns">
+  <header>
+    <h4>Projetos Apoiados</h4>
+  </header>
+  <article class="field">
+    <% @backers.each do |backer| %>
+      <% projeto = Project.find(backer.project_id) %>
+      <div class="box-inset">
+        <span><%= projeto.name %></span>
+        <i class="icons location"></i>
+        <span><%= projeto.total_backers %></span>
       </div>
     <% end %>
   </article>

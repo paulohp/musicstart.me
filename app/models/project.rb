@@ -2,6 +2,7 @@ class Project < ActiveRecord::Base
   belongs_to :users
   has_many :rewards, :dependent => :destroy
   has_many :backers, :dependent => :destroy
+  has_many :backered_projects, :through => :backers, :source => :project
   accepts_nested_attributes_for :rewards, allow_destroy: true
   attr_accessible :category, :decription, :headline, :name, :price, :soundcloud_url, :user_id, :approved, :image_url, :online_day, :rewards_attributes
 

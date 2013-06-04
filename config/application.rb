@@ -57,6 +57,7 @@ module MusicstartmeApp
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
+    config.assets.version = '1.2'
+    config.assets.paths << Rails.root.join("vendor", "assets")
   end
 end

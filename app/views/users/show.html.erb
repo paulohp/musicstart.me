@@ -57,11 +57,10 @@
   </header>
   <article class="field">
     <% @backers.each do |backer| %>
-      <% projeto = Project.find(backer.project_id) %>
       <div class="box-inset">
-        <span><%= projeto.name %></span>
+        <span><%= backer.projects.name %></span>
         <i class="icons location"></i>
-        <span><%= projeto.total_backers %></span>
+        <span><%= backer.projects.total_backers %></span>
       </div>
     <% end %>
   </article>

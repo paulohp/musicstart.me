@@ -24,7 +24,7 @@
         <%= f.text_field :value, :value => params[:reward_value], :class => 'text' %>
       </div>
       <div class="actions">
-        <%= f.submit %>
+        <%= f.submit "Confirmar", :class => 'btn primary' %>
       </div>
     <% end %>
     <%= link_to 'Back', backers_path %>

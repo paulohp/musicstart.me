@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   has_many :badges , :through => :levels
   has_many :levels
   has_many :projects, :dependent => :destroy
+  has_many :backers, :dependent => :destroy
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

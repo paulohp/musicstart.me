@@ -1,29 +1,46 @@
-<%= form_for(@backer) do |f| %>
-  <%= f.hidden_field :project_id, :value => params[:project_id] %>
-  <%= f.hidden_field :user_id, :value => params[:user_id] %>
-  <%= f.hidden_field :reward_id, :value => params[:reward_id] %>
-  <%= f.hidden_field :value, :value => params[:reward_value] %>
-  <% if @backer.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@backer.errors.count, "error") %> prohibited this backer from being saved:</h2>
+<section id="backers">
+  <section class="eleven columns">
+    <%= form_for(@backer) do |f| %>
+      <%= f.hidden_field :project_id, :value => params[:project_id] %>
+      <%= f.hidden_field :user_id, :value => params[:user_id] %>
+      <%= f.hidden_field :reward_id, :value => params[:reward_id] %>
+      <%= f.hidden_field :value, :value => params[:reward_value] %>
+      <%= f.hidden_field :confirmed, :value => false %>
+      <% if @backer.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@backer.errors.count, "error") %> prohibited this backer from being saved:</h2>
 
-      <ul>
-      <% @backer.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+          <ul>
+          <% @backer.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <script>
-    alert('<%= params[:user_id] %>')
-  </script>
+      <script>
+        alert('<%= params[:user_id] %>')
+      </script>
+      <div class="field row">
+        <%= f.text_field :value, :value => params[:reward_value], :class => 'text' %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+    <%= link_to 'Back', backers_path %>
 
-    <%= f.text_field :value, :value => params[:reward_value] %>
-  <div class="field">
-    <%= f.label :confirmed %><br />
-    <%= f.check_box :confirmed %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  </section>
+  <section class="aside-backers four columns">
+    <div class="box">
+      <header>
+        <strong class="text-marked">Importante!</strong>
+      </header>
+      <article></article>
+    </div>
+    <div>
+      <header>
+        <h5>Questões Frequentes</h5>
+      </header>
+    </div>
+  </section>
+</section>

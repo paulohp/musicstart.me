@@ -31,7 +31,7 @@
   <div>
     <h4>Pontos</h4>
     <article class="points">
-      <%= @user.points.last.value %>
+      <%= @user.points.map(&:value).inject(:+) %>
     </article>
   </div>
 </section>

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"projec",
+				"projects"
+			],
+			[
+				"clea",
+				"clear:both;float:left"
+			],
+			[
+				"ba",
+				"badge"
+			],
+			[
 				"in",
 				"inj	inject(init) { |mem, var| .. }"
 			],
@@ -502,36 +514,16 @@
 			[
 				"add",
 				"add_fields"
-			],
-			[
-				"spa",
-				"span12"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"_",
-				"_name"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<!--<article>\n  <%= #@project.soundcloud_player.html_safe %>\n</article>-->",
+			"file": "app/controllers/backers_controller.rb",
 			"settings":
 			{
-				"buffer_size": 74,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/projects/_project.html.erb",
-			"settings":
-			{
-				"buffer_size": 1359,
+				"buffer_size": 900,
 				"line_ending": "Unix"
 			}
 		}
@@ -584,18 +576,28 @@
 	},
 	"file_history":
 	[
+		"/projetos/rails/musicstartme-app/app/views/projects/show.html.erb",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/users.css.sass",
+		"/projetos/rails/musicstartme-app/app/models/backer.rb",
+		"/projetos/rails/musicstartme-app/app/views/users/show.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/projects/_project.html.erb",
+		"/projetos/rails/musicstartme-app/app/views/layouts/application.html.erb",
+		"/projetos/rails/musicstartme-app/config/application.rb",
+		"/home/paulo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/projetos/rails/musicstartme-app/app/controllers/users_controller.rb",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.sass",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.scss",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.sass",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss",
+		"/projetos/rails/musicstartme-app/app/assets/stylesheets/application.css",
 		"/projetos/rails/musicstartme-app/app/views/backers/new.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/pages/index.html.erb",
 		"/projetos/rails/musicstartme-app/app/controllers/pages_controller.rb",
-		"/projetos/rails/musicstartme-app/app/views/projects/show.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/backers/_form.html.erb",
 		"/projetos/rails/musicstartme-app/app/models/reward.rb",
 		"/projetos/rails/musicstartme-app/app/models/user.rb",
-		"/projetos/rails/musicstartme-app/app/controllers/users_controller.rb",
 		"/projetos/rails/musicstartme-app/app/controllers/projects_controller.rb",
-		"/projetos/rails/musicstartme-app/app/views/users/show.html.erb",
 		"/projetos/rails/musicstartme-app/app/models/project.rb",
-		"/projetos/rails/musicstartme-app/app/models/backer.rb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/backers.css.sass",
 		"/projetos/rails/musicstartme-app/app/controllers/backers_controller.rb",
 		"/projetos/rails/musicstartme-app/app/views/pages/_projetos_novos.html.erb",
@@ -604,29 +606,22 @@
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/backers.css.scss",
 		"/projetos/rails/musicstartme-app/app/admin/backers.rb",
 		"/projetos/rails/musicstartme-app/config/routes.rb",
-		"/projetos/rails/musicstartme-app/app/views/projects/_project.html.erb",
-		"/projetos/rails/musicstartme-app/app/assets/stylesheets/users.css.sass",
 		"/projetos/rails/musicstartme-app/app/helpers/application_helper.rb",
-		"/projetos/rails/musicstartme-app/app/views/layouts/application.html.erb",
 		"/projetos/rails/musicstartme-app/app/models/rewards.rb",
 		"/projetos/rails/musicstartme-app/db/migrate/20130529235151_create_rewards.rb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/users.css.scss",
 		"/projetos/rails/musicstartme-app/app/admin/users.rb",
 		"/projetos/rails/musicstartme-app/app/admin/projects.rb",
-		"/projetos/rails/musicstartme-app/app/assets/stylesheets/pages.css.scss",
 		"/projetos/rails/musicstartme-app/Gemfile.lock",
 		"/projetos/rails/musicstartme-app/Gemfile",
-		"/projetos/rails/musicstartme-app/app/assets/stylesheets/projects.css.scss",
 		"/projetos/rails/musicstartme-app/app/views/projects/_form.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/users/edit.html.erb",
 		"/projetos/rails/musicstartme-app/app/helpers/projects_helper.rb",
 		"/projetos/rails/musicstartme-app/musicstartme.sublime-workspace",
 		"/projetos/rails/musicstartme-app/app/views/projects/index.html.erb",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/ui.css",
-		"/projetos/rails/musicstartme-app/app/assets/stylesheets/application.css",
 		"/projetos/rails/musicstartme-app/app/views/devise/registrations/new.html.erb",
 		"/projetos/rails/musicstartme-app/db/schema.rb",
-		"/home/paulo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/paulo/Área de Trabalho/person.b",
 		"/home/paulo/Área de Trabalho/person.java",
 		"/projetos/rails/musicstartme-app/app/assets/stylesheets/text.css",
@@ -708,10 +703,7 @@
 		"/projetos/rails/smartconvites/app/assets/javascripts/editor_admin.js.erb",
 		"/projetos/rails/smartconvites/app/views/invitations/_form.html.erb",
 		"/projetos/rails/smartconvites/app/assets/javascripts/script.js",
-		"/projetos/rails/smartconvites/app/controllers/registrations_controller.rb",
-		"/projetos/rails/smartconvites/app/assets/javascripts/fabricjs.js",
-		"/projetos/rails/smartconvites/app/assets/stylesheets/style.css",
-		"/projetos/rails/smartconvites/app/models/user_card.rb"
+		"/projetos/rails/smartconvites/app/controllers/registrations_controller.rb"
 	],
 	"find":
 	{
@@ -730,6 +722,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":",
+			": ",
+			"}",
+			"{",
+			";",
 			".project",
 			"dateFormat",
 			"datepicker",
@@ -852,12 +849,7 @@
 			"AdminUser",
 			"slider-id-wrapper",
 			"969",
-			"loader",
-			"nd",
-			"rem",
-			"Remittence",
-			"'span6'",
-			"'span12'"
+			"loader"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -865,6 +857,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			": ",
+			":",
+			"",
 			"field row",
 			"invitation_id",
 			"btn btn-large btn-primary",
@@ -973,56 +968,31 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "app/controllers/backers_controller.rb",
 					"settings":
 					{
-						"buffer_size": 74,
+						"buffer_size": 900,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								74,
-								74
+								53,
+								86
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/projects/_project.html.erb",
-					"settings":
-					{
-						"buffer_size": 1359,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1290,
-								1290
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 148.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1080,6 +1050,30 @@
 		"selected_items":
 		[
 			[
+				"contr",
+				"app/controllers/backers_controller.rb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"sho",
+				"app/views/projects/show.html.erb"
+			],
+			[
+				"bac",
+				"app/models/backer.rb"
+			],
+			[
+				"user",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"users/sho",
+				"app/views/users/show.html.erb"
+			],
+			[
 				"_proj",
 				"app/views/projects/_project.html.erb"
 			],
@@ -1090,10 +1084,6 @@
 			[
 				"users/s",
 				"app/views/users/show.html.erb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
 			],
 			[
 				"proj",
@@ -1116,10 +1106,6 @@
 				"app/models/reward.rb"
 			],
 			[
-				"bac",
-				"app/controllers/backers_controller.rb"
-			],
-			[
 				"backers/new",
 				"app/views/backers/new.html.erb"
 			],
@@ -1134,10 +1120,6 @@
 			[
 				"routes",
 				"config/routes.rb"
-			],
-			[
-				"app",
-				"app/views/layouts/application.html.erb"
 			],
 			[
 				"inde",
@@ -1360,14 +1342,6 @@
 				"app/views/layouts/application.html.erb"
 			],
 			[
-				"sho",
-				"app/views/invitations/show.html.erb"
-			],
-			[
-				"contr",
-				"app/controllers/invitations_controller.rb"
-			],
-			[
 				"covers",
 				"app/controllers/covers_controller.rb"
 			],
@@ -1586,10 +1560,6 @@
 			[
 				"boot",
 				"afimdetrocar.com.br/app/Config/bootstrap.php"
-			],
-			[
-				"view",
-				"afimdetrocar.com.br/app/View/Users/view.ctp"
 			]
 		],
 		"width": 0.0
@@ -1601,7 +1571,7 @@
 		[
 			[
 				"",
-				"/projetos/rails/tasklist/_octo.sublime-project"
+				"/projetos/rails/canteir.us/canteirus.sublime-project"
 			],
 			[
 				"s",

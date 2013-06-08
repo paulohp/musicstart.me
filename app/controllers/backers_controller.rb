@@ -21,7 +21,7 @@ class BackersController < InheritedResources::Base
     respond_to do |format|
       if @backer.save
         @user.change_points({ points: 70, type: 1 })
-        format.html { redirect_to root_path, notice: 'Backer was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Obrigado por nos ajudar, estamos avaliando suas doações!' }
         format.json { render json: @backer, status: :created, location: @backer }
       else
         format.html { render action: "new" }

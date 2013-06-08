@@ -14,6 +14,9 @@
 .row{
   max-width: 1024px;
 }
+.clearfix{
+  clear:both;
+}
 .right{
   float: right;
 }

@@ -51,80 +51,28 @@
   <section class="section">
     <!-- heading -->
     <header class="heading">
-      <h1>NEWS</h1>
-      <a class="link" href="articles-home.html">All News</a>
+      <h1>NOVOS</h1>
+      <a class="link" href="articles-home.html">Todos</a>
     </header>
     <!-- carousel responsive1 -->
     <div class="carousel responsive1">
       <div class="mask">
         <!-- slideset -->
         <div class="slideset">
-          <!-- slide -->
-          <div class="slide">
-            <a href="articles.html">
-              <img src="images/img-3.jpg" width="326" height="183" alt="image description">
-              <div class="text">
-                <h2>WE WILL BE OPENING FOR BAND OF HORSES NEXT WEEK</h2>
-                <time class="date" datetime="2012-05-27">MAY 27TH, 2012</time>
-                <span class="more">More</span>
-              </div>
-            </a>
-          </div>
-          <!-- slide -->
-          <div class="slide">
-            <a href="articles.html">
-              <img src="images/img-4.jpg" width="326" height="183" alt="image description">
-              <div class="text">
-                <h2>NEW CANADIAN TOUR DATES TO BE ANNOUCED</h2>
-                <time class="date" datetime="2012-04-07">APRIL 7TH, 2012</time>
-                <span class="more">More</span>
-              </div>
-            </a>
-          </div>
-          <!-- slide -->
-          <div class="slide">
-            <a href="articles.html">
-              <img src="images/img-5.jpg" width="326" height="183" alt="image description">
-              <div class="text">
-                <h2>WATCH OUR PERFORMANCE AT THE MUSIC AWARD</h2>
-                <time class="date" datetime="2012-05-27">MAY 27TH, 2012</time>
-                <span class="more">More</span>
-              </div>
-            </a>
-          </div>
-          <!-- slide -->
-          <div class="slide">
-            <a href="articles.html">
-              <img src="images/img-3.jpg" width="326" height="183" alt="image description">
-              <div class="text">
-                <h2>WE WILL BE OPENING FOR BAND OF HORSES NEXT WEEK</h2>
-                <time class="date" datetime="2012-05-27">MAY 27TH, 2012</time>
-                <span class="more">More</span>
-              </div>
-            </a>
-          </div>
-          <!-- slide -->
-          <div class="slide">
-            <a href="articles.html">
-              <img src="images/img-4.jpg" width="326" height="183" alt="image description">
-              <div class="text">
-                <h2>NEW CANADIAN TOUR DATES TO BE ANNOUCED</h2>
-                <time class="date" datetime="2012-04-07">APRIL 7TH, 2012</time>
-                <span class="more">More</span>
-              </div>
-            </a>
-          </div>
-          <!-- slide -->
-          <div class="slide">
-            <a href="articles.html">
-              <img src="images/img-5.jpg" width="326" height="183" alt="image description">
-              <div class="text">
-                <h2>WATCH OUR PERFORMANCE AT THE MUSIC AWARD</h2>
-                <time class="date" datetime="2012-05-27">MAY 27TH, 2012</time>
-                <span class="more">More</span>
-              </div>
-            </a>
-          </div>
+          <% @projetos_novos.each do |project| %>
+            <!-- slide -->
+            <div class="slide">
+              <a href="articles.html">
+                <%= image_tag(project.image_url.thumb.url) if project.image_url %>
+                <div class="text">
+                  <h2><%= project.name %></h2>
+                  <time class="date" datetime="2012-05-27">MAY 27TH, 2012</time>
+                  <span class="more">More</span>
+                </div>
+              </a>
+            </div>
+            <!-- slide -->
+          <% end %>
         </div>
       </div>
       <a class="btn-prev" href="#">Previous</a>

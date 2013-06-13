@@ -1,6 +1,8 @@
 MusicstartmeApp::Application.routes.draw do
 
- ActiveAdmin.routes(self)
+  root :to => 'pages#index'
+
+  ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
@@ -65,7 +67,7 @@ MusicstartmeApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'pages#index'
+
 
   # See how all your routes lay out with "rake routes"
 

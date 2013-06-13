@@ -1,53 +1,53 @@
 <!-- gallery -->
 <div class="gallery responsive">
   <div class="mask">
-    <% @projects_in_home.each do |project| %>
     <ul class="slideset">
-      <li class="slide" data-transition="slidedown" data-slotamount="10" data-masterspeed="300" data-thumb="<%= image_tag(project.image_url.thumb.url) if project.image_url %>">
-        <%= image_tag(project.image_url.thumb.url) if project.image_url %>
-        <div class="caption text-box lfl lfl" data-x="-91" data-y="140" data-speed="300" data-start="800" data-easing="easeOutExpo">
-          <h1><span><%= project.headline %></span></h1>
-          <a class="more" href="articles.html">READ MORE</a>
-          <div style="" class="tp-leftarrow tparrows default"></div>
-          <div style="" class="tp-rightarrow tparrows default"></div>
-        </div>
-      </li>
+      <% @projects_in_home.each do |project| %>
+        <li class="slide" data-transition="slidedown" data-slotamount="10" data-masterspeed="300" data-thumb="/assets/img-1-small.jpg">
+          <%= image_tag(project.image_url.thumb.url) if project.image_url %>
+          <div class="caption text-box lfl lfl" data-x="-91" data-y="140" data-speed="300" data-start="800" data-easing="easeOutExpo">
+            <h1><span><%= project.headline %></span></h1>
+            <a class="more" href="articles.html">READ MORE</a>
+            <div style="" class="tp-leftarrow tparrows default"></div>
+            <div style="" class="tp-rightarrow tparrows default"></div>
+          </div>
+        </li>
+      <% end %>
     </ul>
-    <% end %>
   </div>
 </div>
 <!-- fim banner -->
 
 <!-- trends(principais aparições) -->
-<section class="trends box">
-  <section id="projects" class="columns">
-    <div class="content-area">
-      <header class="left wrapper-title">
-        <h3 class="main-title">Selecionados</h3>
-      </header>
-      <article class="clearfix">
-        <%= render 'destaques'%>
-      </article>
+<div class="container_content">
+  <!-- widget-blocks -->
+  <div class="widget-blocks">
+    <!-- block -->
+    <div class="block">
+      <div class="holder">
+        <!-- title-box -->
+        <header class="title-box">
+          <h2>Selecionados</h2>
+        </header>
+        <article class="clearfix">
+          <%= render 'destaques'%>
+        </article>
+      </div>
     </div>
-    <div class="content-area">
-      <header class="left wrapper-title">
-        <h3 class="main-title">Acabando</h3>
-      </header>
-      <article class="clearfix">
-        <%= render 'projetos_quase_acabando' %>
-      </article>
+    <div class="block">
+      <div class="holder">
+        <!-- title-box -->
+        <header class="title-box">
+          <h2>Acabando</h2>
+        </header>
+        <article class="clearfix">
+          <%= render 'projetos_quase_acabando' %>
+        </article>
+      </div>
     </div>
-
-    <div class="content-area">
-      <header class="left wrapper-title">
-        <h3 class="main-title">Novos</h3>
-      </header>
-      <article class="clearfix">
-        <%= render 'projetos_novos' %>
-      </article>
-    </div>
-  </section>
-  <!-- fim trends -->
+  </div>
+</div>
+<!-- fim trends -->
 
   <!-- Social -->
   <!--<aside class="five columns">

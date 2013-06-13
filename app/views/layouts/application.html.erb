@@ -51,13 +51,20 @@
                 <strong class="logo-panel"><a href="index.html"><img src="/assets/logo-panel.png" alt="musicstart.me"></a></strong>
                 <ul>
                   <li class="active"><a class="home" href="index.html">HOME</a></li>
-                  <li><a href="articles-home.html">NEWS</a></li>
-                  <li><a href="gigs.html">GIGS</a></li>
-                  <li><a href="discography.html">DISCOGRAPHY</a></li>
-                  <li><a href="photos-home.html">PHOTOS</a></li>
-                  <li><a href="video-home.html">VIDEOS</a></li>
-                  <li><a href="bio.html">BIOGRAPHY</a></li>
-                  <li><a href="booking.html">BOOKING</a></li>
+                  <li><a href="/explorar">EXPLORAR</a></li>
+                  <li><a href="/enviar">ENVIAR</a></li>
+                  <% if user_signed_in? %>
+                    <li><a href="#"><%= current_user.email %></a>
+                      <div class="dropdown">
+                        <ul>
+                          <li><a href="/users/<%=current_user.id%>">Perfil</a></li>
+                          <li><%= link_to "Sair", destroy_user_session_path, :method => :delete %></li>
+                        </ul>
+                      </div>
+                    </li>
+                  <% else %>
+                    <li><%= link_to "Cadastre-se", new_user_registration_path %></li>
+                  <% end %>
                 </ul>
               </nav>
               <!-- social-networks -->

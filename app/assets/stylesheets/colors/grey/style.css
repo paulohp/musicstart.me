@@ -1,0 +1,180 @@
+body{
+	color:#1f1f1f;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-color:#000;
+}
+a{
+	color:#73717C;
+}
+#nav > ul > li.active > a{
+	background:#73717C !important;
+	color:#fff;
+}
+#nav li li a:hover,
+#nav li li.active a{
+	background:#73717C;
+}
+.gallery .tp-leftarrow,
+.gallery .tp-rightarrow{
+	background:#73717C;
+}
+.gallery .more{
+	background:#73717C;
+	color:#fff;
+}
+.player-box a:hover{
+	background-color:#73717C;
+}
+.player-box .jp-progress .jp-play-bar{
+	background:#73717C;
+}
+.twitter-box .meta .time a{
+	color:#73717C;
+}
+.carousel .btn-prev:hover,
+.carousel .btn-next:hover{
+	background:#73717C;
+}
+.carousel .slide a.hover,
+.article a.hover{
+	background:#73717C;
+	color:#1a1a1a;
+}
+.carousel .date,
+.article .date{
+	color:#73717C;
+}
+.carousel .video-box .btn-play{
+	color:#73717C;
+}
+.button-more:hover{
+	background:#73717C;
+	color:#1a1a1a;
+}
+.single-post h2{
+	color:#73717C;
+}
+.meta .date{
+	color:#73717C;
+	background:#fff;
+}
+.blockquote-block .title{
+	color:#73717C;
+}
+.blockquote-block cite{
+	color:#73717C;
+}
+a.button{
+	background:#73717C;
+	color:#000;
+}
+.filters-block .active a{
+	background:#73717C !important;
+}
+.media-block a.hover{
+	background:#73717C;
+	color:#1a1a1a;
+}
+.media-block .date,
+.media-block .category{
+	color:#73717C;
+}
+.photos-list .hover-text span{
+	color:#73717C;
+}
+.contact-box .phone{
+	color:#73717C;
+}
+.form input[type="submit"]{
+	background:#73717C;
+	color:#000;
+}
+.error{
+	color:#73717C
+}
+input.error{
+	border-color:#73717C!important
+}
+.success span{
+	color:#73717C;font-size: 30px;
+}
+.info-section h2{
+	color:#73717C;
+}
+.concerts-list .title-row .date{
+	color:#73717C;
+}
+.concerts-list .title-row.hover .buttons{
+	background:#73717C;
+}
+.concerts-list .expanded .title-row .link{
+	color:#73717C !important;
+}
+.concerts-list .title-row.hover .buttons .button{
+	background:#232323;
+	color:#73717C;
+}
+.concerts-list .title-row.hover .button:hover{
+	color:#fff;
+}
+.concerts-list .expanded .title-row .button{
+	background:#73717C !important;
+	color:#000 !important;
+}
+.concerts-list .expanded .title-row:after{
+	background:#73717C;
+}
+#sidebar ul a .number{
+	color:#73717C;
+}
+.subscribe-block label span{
+	color:#73717C;
+}
+.subscribe-block input[type="submit"]:hover{
+	background:#73717C;
+	color:#010101;
+}
+.subscribe-block .status{
+    color:#73717C!important;      
+}
+.select-options .item-selected a{
+	background:#73717C;
+}
+.concerts-list .title-row .opener:hover{
+	color:#73717C;
+}
+.concerts-list .title-row .link{
+	color:#73717C !important;
+}
+.concerts-list .expanded .title-row .opener:hover:after{
+	background:#73717C;
+}
+.concerts-list .title-row .button{
+	background:#73717C !important;
+	color:#000 !important;
+}
+
+.panel .opener span:after,
+.social-networks a,
+.gallery .tp-leftarrow:after,
+.gallery .tp-rightarrow:after,
+.link:before,
+.player-box a,
+.twitter-box .meta:after,
+.carousel .btn-prev:after,
+.carousel .btn-next:after,
+.carousel .more,
+.article .more,
+.carousel .video-box .btn-play:before,
+.video-block .btn-play,
+.tracks-list .btn-play,
+.media-block .text-box:after,
+.photos-list .hover-text span:after,
+.concerts-list .title-row .opener:after,
+.concerts-list .title-row:after,
+.select-area .select-opener,
+.twitter-box .meta:after,
+#sidebar ul a:after{
+	background-image: url(sprite.png);
+}

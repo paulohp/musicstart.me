@@ -12,7 +12,7 @@
  *= require_tree .
  */
 .row{
-  max-width: 1024px;
+  max-width: 1024px!important;
 }
 .clearfix{
   clear:both;

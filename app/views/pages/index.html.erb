@@ -1,20 +1,21 @@
-<!-- banner -->
-<section class="banner slider">
-  <div class="sliderContent">
+<!-- gallery -->
+<div class="gallery responsive">
+  <div class="mask">
     <% @projects_in_home.each do |project| %>
-    <div class="featured-inner">
-      <%=link_to project do %>
-        <article class="left banner-container featured-inner">
-          <%= image_tag(project.image_url.thumb.url) if project.image_url %>
-        </article>
-        <aside class="right banner-aside featured-meta">
-          <strong><%= project.headline %></strong>
-        </aside>
-      <% end %>
-    </div>
+    <ul class="slideset">
+      <li class="slide" data-transition="slidedown" data-slotamount="10" data-masterspeed="300" data-thumb="<%= image_tag(project.image_url.thumb.url) if project.image_url %>">
+        <%= image_tag(project.image_url.thumb.url) if project.image_url %>
+        <div class="caption text-box lfl lfl" data-x="-91" data-y="140" data-speed="300" data-start="800" data-easing="easeOutExpo">
+          <h1><span><%= project.headline %></span></h1>
+          <a class="more" href="articles.html">READ MORE</a>
+          <div style="" class="tp-leftarrow tparrows default"></div>
+          <div style="" class="tp-rightarrow tparrows default"></div>
+        </div>
+      </li>
+    </ul>
     <% end %>
   </div>
-</section>
+</div>
 <!-- fim banner -->
 
 <!-- trends(principais aparições) -->

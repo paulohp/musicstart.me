@@ -4,7 +4,7 @@ Description:  Designed by <a href="http://themeforest.net/user/irontemplates">Ir
 Author:  <a href="http://www.irontemplates.com">IronTemplates</a>
 Version: 1.0
 
-01. Fonts settings 
+01. Fonts settings
 02. General
 03. Header
 04.	Content
@@ -29,32 +29,32 @@ Version: 1.0
 */
 
 
-/*------------------------------ 
-	01. Fonts settings 
+/*------------------------------
+	01. Fonts settings
 -------------------------------*/
 
 @font-face{
 	font-family:'oswaldbold';
-	src:url('../fonts/oswald-bold-webfont.eot');
-	src:url('../fonts/oswald-bold-webfont.eot@#iefix') format('embedded-opentype'),
-		url('../fonts/oswald-bold-webfont.woff') format('woff'),
-		url('../fonts/oswald-bold-webfont.ttf') format('truetype'),
-		url('../fonts/oswald-bold-webfont.svg') format('svg');
+	src:url('/assets/oswald-bold-webfont.eot');
+	src:url('/assets/oswald-bold-webfont.eot@#iefix') format('embedded-opentype'),
+		url('/assets/oswald-bold-webfont.woff') format('woff'),
+		url('/assets/oswald-bold-webfont.ttf') format('truetype'),
+		url('/assets/oswald-bold-webfont.svg') format('svg');
 	font-weight:normal;
 	font-style:normal;
 }
 @font-face{
 	font-family:'oswaldregular';
-	src:url('../fonts/oswald-regular-webfont.eot');
-	src:url('../fonts/oswald-regular-webfont.eot@#iefix') format('embedded-opentype'),
-		url('../fonts/oswald-regular-webfont.woff') format('woff'),
-		url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
-		url('../fonts/oswald-regular-webfont.svg') format('svg');
+	src:url('/assets/oswald-regular-webfont.eot');
+	src:url('/assets/oswald-regular-webfont.eot@#iefix') format('embedded-opentype'),
+		url('/assets/oswald-regular-webfont.woff') format('woff'),
+		url('/assets/oswald-regular-webfont.ttf') format('truetype'),
+		url('/assets/oswald-regular-webfont.svg') format('svg');
 	font-weight:normal;
 	font-style:normal;
 }
 
-/*------------------------------ 
+/*------------------------------
 	02. General
 -------------------------------*/
 
@@ -62,7 +62,7 @@ body{
 	margin:0;
 	color:#1f1f1f;
 	font:14px/20px Arial, Helvetica, sans-serif;
-	background-image: url(../images/bg.jpg);
+	background-image: url(/assets/bg.jpg);
 	background-repeat: no-repeat;
 	background-color:#000;
 	-webkit-text-size-adjust:100%;
@@ -156,7 +156,7 @@ p{margin:0 0 21px;}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	03. Header
 -------------------------------*/
 
@@ -196,7 +196,7 @@ p{margin:0 0 21px;}
 	display: none;
 }
 .panel.fixed-bar .logo-panel{
-    display:block;   
+    display:block;
 }
 /* slogan */
 .slogan{
@@ -272,7 +272,7 @@ p{margin:0 0 21px;}
 .breadcrumbs a{color:#000;}
 
 
-/*------------------------------ 
+/*------------------------------
 	04. Content
 -------------------------------*/
 
@@ -322,7 +322,7 @@ p{margin:0 0 21px;}
 	width:12px;
 	height:11px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -112px -61px;
 	position:absolute;
@@ -333,7 +333,7 @@ p{margin:0 0 21px;}
 .panel.popup-active .opener{background:#efeded;}
 
 
-/*------------------------------ 
+/*------------------------------
 	05. Navigation
 -------------------------------*/
 
@@ -427,7 +427,7 @@ p{margin:0 0 21px;}
 	width:26px;
 	height:26px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position:;
 	text-indent:-9999px;
@@ -440,7 +440,7 @@ p{margin:0 0 21px;}
 .social-networks .twitter:hover{background-position:-34px -30px;}
 
 
-/*------------------------------ 
+/*------------------------------
 	06. Gallery
 -------------------------------*/
 
@@ -448,8 +448,8 @@ p{margin:0 0 21px;}
 .gallery{
 	position:relative;
 	z-index:1;
-	background:#fff url(../images/revolution-slider/loader.gif) no-repeat 50% 50%;
-	height:500px; 
+	background:#fff url(/assets/revolution-slider/loader.gif) no-repeat 50% 50%;
+	height:500px;
 }
 .gallery .mask{
 	width:100%;
@@ -489,7 +489,7 @@ p{margin:0 0 21px;}
 	width:10px;
 	height:10px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -65px 0;
 	position:absolute;
@@ -506,7 +506,7 @@ p{margin:0 0 21px;}
 .gallery .caption .tp-rightarrow {
     visibility: visible!important;
     left: 0;
-}  
+}
 .gallery .text-box{
 	position: absolute;
 	left: 0;
@@ -546,7 +546,7 @@ p{margin:0 0 21px;}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	07. Widgets Blocs
 -------------------------------*/
 
@@ -589,7 +589,7 @@ p{margin:0 0 21px;}
 	width:9px;
 	height:9px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -80px 0;
 	position:absolute;
@@ -610,7 +610,7 @@ p{margin:0 0 21px;}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	08. Album Box
 -------------------------------*/
 
@@ -667,7 +667,7 @@ p{margin:0 0 21px;}
 .player-box a{
 	width:35px;
 	height:37px;
-	background:#fff url(../images/sprite.png) no-repeat;
+	background:#fff url(/assets/sprite.png) no-repeat;
 	text-indent:-9999px;
 	overflow:hidden;
 	float:left;
@@ -721,7 +721,7 @@ p{margin:0 0 21px;}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	09. Twitter Box
 -------------------------------*/
 
@@ -747,7 +747,7 @@ p{margin:0 0 21px;}
 	width:17px;
 	height:14px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -80px -13px;
 	position:absolute;
@@ -760,7 +760,7 @@ p{margin:0 0 21px;}
 
 
 
-/*------------------------------ 
+/*------------------------------
 	10. Sections / Headings
 -------------------------------*/
 
@@ -801,7 +801,7 @@ p{margin:0 0 21px;}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	11. carousel
 -------------------------------*/
 
@@ -851,7 +851,7 @@ p{margin:0 0 21px;}
 	width:16px;
 	height:57px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -104px 0;
 	position:absolute;
@@ -920,7 +920,7 @@ p{margin:0 0 21px;}
 	width:17px;
 	height:17px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -81px -31px;
 	text-indent:-9999px;
@@ -960,7 +960,7 @@ p{margin:0 0 21px;}
 	-moz-opacity: 0;
 	-khtml-opacity: 0;
 	opacity: 0;
-  
+
 	text-align:center;
 	padding:13px;
 	width:100%;
@@ -978,7 +978,7 @@ p{margin:0 0 21px;}
 	-moz-transition: opacity 300ms ease-in-out;
 	-o-transition: opacity 300ms ease-in-out;
 	-ms-transition: opacity 300ms ease-in-out;
-	transition: opacity 300ms ease-in-out; 	
+	transition: opacity 300ms ease-in-out;
 }
 .carousel .video-box .hover-box:before{
 	content:'';
@@ -1017,7 +1017,7 @@ p{margin:0 0 21px;}
 	width:56px;
 	height:56px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -149px 0;
 	text-indent:-9999px;
@@ -1038,7 +1038,7 @@ p{margin:0 0 21px;}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	12. Articles
 -------------------------------*/
 
@@ -1217,7 +1217,7 @@ a.button:hover{
 .form-block{padding:35px 0 0;}
 
 
-/*------------------------------ 
+/*------------------------------
 	13. Video Block
 -------------------------------*/
 
@@ -1233,7 +1233,7 @@ a.button:hover{
 	width:89px;
 	height:89px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -210px 0;
 	text-indent:-9999px;
@@ -1330,7 +1330,7 @@ a.button:hover{
 	width: 46px;
 	height: 56px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -202px -96px;
 	position:absolute;
@@ -1367,7 +1367,7 @@ a.button:hover{
 .media-block a.hover .category{color:#1a1a1a;}
 
 
-/*------------------------------ 
+/*------------------------------
 	14. Photos List
 -------------------------------*/
 
@@ -1432,7 +1432,7 @@ a.button:hover{
 	width:17px;
 	height:17px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -109px -103px;
 	position:absolute;
@@ -1443,7 +1443,7 @@ a.button:hover{
 
 
 
-/*------------------------------ 
+/*------------------------------
 	15. Contact Box
 -------------------------------*/
 
@@ -1622,7 +1622,7 @@ input.error{border-color:#F33CA4!important}
 .webkit .tracks-list .name{margin-top:1px;}
 
 
-/*------------------------------ 
+/*------------------------------
 	16. Tracks Block
 -------------------------------*/
 
@@ -1696,7 +1696,7 @@ input.error{border-color:#F33CA4!important}
 .tracks-list .btn-play{
 	width:36px;
 	height:37px;
-	background:url(../images/sprite.png) no-repeat -161px -109px !important;
+	background:url(/assets/sprite.png) no-repeat -161px -109px !important;
 	text-indent:-9999px;
 	overflow:hidden;
 	float:right;
@@ -1708,7 +1708,7 @@ input.error{border-color:#F33CA4!important}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	17. Concerts List
 -------------------------------*/
 
@@ -1809,7 +1809,7 @@ input.error{border-color:#F33CA4!important}
 	width:18px;
 	height:20px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -82px -121px;
 	position:absolute;
@@ -1863,7 +1863,7 @@ input.error{border-color:#F33CA4!important}
 
 
 
-/*------------------------------ 
+/*------------------------------
 	18. Sidebar
 -------------------------------*/
 
@@ -1916,7 +1916,7 @@ input.error{border-color:#F33CA4!important}
 	width:9px;
 	height:9px;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -80px 0;
 	position:absolute;
@@ -1936,7 +1936,7 @@ input.error{border-color:#F33CA4!important}
 
 
 
-/*------------------------------ 
+/*------------------------------
 	19. Footer
 -------------------------------*/
 
@@ -1949,7 +1949,7 @@ input.error{border-color:#F33CA4!important}
 	padding:0 26px 53px 10px;
 }
 .footer-logo{
-	background:url(../images/footer-logo.png) no-repeat;
+	background:url(/assets/footer-logo.png) no-repeat;
 	width:169px;
 	height:74px;
 	text-indent:-9999px;
@@ -1975,7 +1975,7 @@ input.error{border-color:#F33CA4!important}
 #footer .social-networks li{margin:0 0 0 2px;}
 
 
-/*------------------------------ 
+/*------------------------------
 	20. Subscribe Block
 -------------------------------*/
 
@@ -2030,7 +2030,7 @@ input.error{border-color:#F33CA4!important}
 	color:#010101;
 }
 .subscribe-block .status{
-    color:#F33CA4!important;      
+    color:#F33CA4!important;
     display: block;
     clear: both;
     padding-top: 10px;
@@ -2039,7 +2039,7 @@ input.error{border-color:#F33CA4!important}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	21. Footer Bottom
 -------------------------------*/
 
@@ -2122,7 +2122,7 @@ input.error{border-color:#F33CA4!important}
 .select-area .select-opener{
 	position:absolute;
 	background-color: transparent;
-	background-image:url(../images/sprite.png);
+	background-image:url(/assets/sprite.png);
 	background-repeat:no-repeat;
 	background-position: -136px -111px;
 	height:6px;
@@ -2166,7 +2166,7 @@ input.error{border-color:#F33CA4!important}
 }
 
 
-/*------------------------------ 
+/*------------------------------
 	22. Media Queries
 -------------------------------*/
 
@@ -2344,7 +2344,7 @@ input.error{border-color:#F33CA4!important}
 	.footer-logo{
 		width:106px;
 		height:46px;
-		background:url(../images/footer-logo-mobile.png) no-repeat;
+		background:url(/assets/footer-logo-mobile.png) no-repeat;
 	}
 	.subscribe-block{
 		background:none;
@@ -2412,7 +2412,7 @@ input.error{border-color:#F33CA4!important}
 		width:13px;
 		height:13px;
 		background-color: transparent;
-		background-image:url(../images/sprite.png);
+		background-image:url(/assets/sprite.png);
 		background-repeat:no-repeat;
 		background-position: -89px -100px;
 		text-indent:-9999px;
@@ -2482,7 +2482,7 @@ input.error{border-color:#F33CA4!important}
 		width:10px;
 		height:7px;
 		background-color: transparent;
-		background-image:url(../images/sprite.png);
+		background-image:url(/assets/sprite.png);
 		background-repeat:no-repeat;
 		background-position: -81px -52px;
 		top:3px;

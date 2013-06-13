@@ -23,36 +23,53 @@
   </head>
 
   <body>
-    <div class="container">
+    <div id="wrapper">
       <div class="row">
-        <nav class="pretty navbar clearfix" id="prettynav">
-          <h1 class="logo">musicstart</h1>
-          <a href="#" class="toggle" data-for="#prettynav > ul"><img src="" /></a>
-          <ul>
-            <li><a href="/explorar">explorar</a></li>
-            <li><a href="/enviar">enviar</a></li>
-            <% if user_signed_in? %>
-              <li><a href="#"><%= current_user.email %></a>
-                <div class="dropdown">
-                  <ul>
-                    <li><a href="/users/<%=current_user.id%>">Perfil</a></li>
-                    <li><%= link_to "Sair", destroy_user_session_path, :method => :delete %></li>
-                  </ul>
-                </div>
-              </li>
-            <% else %>
-              <li><%= link_to "Cadastre-se", new_user_registration_path %></li>
-            <% end %>
-            <li>
-              <div class="field">
-                <p class="text search oval"><input type="search" placeholder="Search" /></p>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="row">
+        <!-- header -->
+          <header id="header">
+            <!-- logo -->
+            <strong class="logo">
+              <a href="index.html">
+                <img class="logo-desktop" src="/assets/logo.png" alt="IronBand.com">
+                <img class="logo-mobile" src="/assets/logo-mobile.png" alt="IronBand.com">
+              </a>
+            </strong>
+            <!-- slogan -->
+            <strong class="slogan">Theme for musician</strong>
+            <!-- blockquote-box -->
+            <div class="blockquote-box">
+              <blockquote>
+                <q>A professional theme for your band signed Iron TEMPLATES</q>
+                <cite>Rolling Stone Magazine</cite>
+              </blockquote>
+            </div>
+          </header>
+          <!-- panel -->
+          <div class="panel">
+            <a class="opener" href="#"><span>Menu</span></a>
+            <!-- nav-holder -->
+            <div class="nav-holder">
+              <!-- nav -->
+              <nav id="nav">
+                <strong class="logo-panel"><a href="index.html"><img src="./images/logo-panel.png" alt="IronBand.com"></a></strong>
+                <ul>
+                  <li class="active"><a class="home" href="index.html">HOME</a></li>
+                  <li><a href="articles-home.html">NEWS</a></li>
+                  <li><a href="gigs.html">GIGS</a></li>
+                  <li><a href="discography.html">DISCOGRAPHY</a></li>
+                  <li><a href="photos-home.html">PHOTOS</a></li>
+                  <li><a href="video-home.html">VIDEOS</a></li>
+                  <li><a href="bio.html">BIOGRAPHY</a></li>
+                  <li><a href="booking.html">BOOKING</a></li>
+                </ul>
+              </nav>
+              <!-- social-networks -->
+              <ul class="social-networks">
+                <li><a class="facebook" href="#">Facebook</a></li>
+                <li><a class="twitter" href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
 
         <div>
           <% flash.each do |name, msg| %>

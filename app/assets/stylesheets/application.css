@@ -42,3 +42,6 @@
 .location{
   background-position: -23px -70px;
 }
+#projects{
+  display:table;
+}

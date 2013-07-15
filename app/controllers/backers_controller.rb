@@ -19,20 +19,18 @@ class BackersController < InheritedResources::Base
   def create
     @backer = current_user.backers.build(params[:backer])
     @user = current_user
-
+    rewards = Backer.find(params[:reward_value])
     payment = PagSeguro::PaymentRequest.new
-    payment.reference = order.id
+    payment.reference = rewards.id
     payment.notification_url = notifications_url
     payment.redirect_url = processing_url
 
-    order.products.each do |product|
-      payment.items << {
-        id: product.id,
-        description: product.title,
-        amount: product.price,
-        weight: product.weight
-      }
-    end
+    payment.items << {
+      id: product.id,
+      description: product.title,
+      amount: product.price,
+      weight: product.weight
+    }
 
     response = payment.register
 
@@ -46,7 +44,7 @@ class BackersController < InheritedResources::Base
     else
       redirect_to response.url
     end
-    
+
     respond_to do |format|
       if @backer.save
         @user.change_points({ points: 70, type: 1 })

@@ -19,17 +19,21 @@ class BackersController < InheritedResources::Base
   def create
     @backer = current_user.backers.build(params[:backer])
     @user = current_user
-    rewards = Backer.find(params[:reward_value])
+
+    project = Project.find(params[:backer][:project_id])
+    rewards = project.rewards.find(params[:backer][:reward_id])
+
+    reward_value = params[:backer][:value]
+    
     payment = PagSeguro::PaymentRequest.new
     payment.reference = rewards.id
     payment.notification_url = notifications_url
     payment.redirect_url = processing_url
 
     payment.items << {
-      id: product.id,
-      description: product.title,
-      amount: product.price,
-      weight: product.weight
+      id: rewards.id,
+      description: rewards.description,
+      amount: reward_value,
     }
 
     response = payment.register
@@ -48,11 +52,11 @@ class BackersController < InheritedResources::Base
     respond_to do |format|
       if @backer.save
         @user.change_points({ points: 70, type: 1 })
-        format.html { redirect_to root_path, notice: 'Obrigado por nos ajudar, estamos avaliando suas doações!' }
-        format.json { render json: @backer, status: :created, location: @backer }
+        #format.html { redirect_to root_path, notice: 'Obrigado por nos ajudar, estamos avaliando suas doações!' }
+        #format.json { render json: @backer, status: :created, location: @backer }
       else
-        format.html { render action: "new" }
-        format.json { render json: @backer.errors, status: :unprocessable_entity }
+        #format.html { render action: "new" }
+        #format.json { render json: @backer.errors, status: :unprocessable_entity }
       end
     end
   end

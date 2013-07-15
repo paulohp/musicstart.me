@@ -4,7 +4,7 @@
       <%= f.hidden_field :project_id, :value => params[:project_id] %>
       <%= f.hidden_field :user_id, :value => params[:user_id] %>
       <%= f.hidden_field :reward_id, :value => params[:reward_id] %>
-      <%= f.hidden_field :reward_value, :value => params[:reward_value] %>
+      <%= f.hidden_field :value, :value => params[:reward_value] %>
       <%= f.hidden_field :confirmed, :value => false %>
       <% if @backer.errors.any? %>
         <div id="error_explanation">
@@ -82,9 +82,6 @@
     var valor = $(this).find('strong').attr('data-attr');
     alert(valor);
     $('#backer_value').val(valor)
-    $('#backer_value').change(function(){
-      $('backer_reward_value').val($(this.val()));
-    });
     $('#backers .text').val(valor).text(valor)
   });
 </script>

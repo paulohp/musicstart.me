@@ -30,6 +30,7 @@ gem 'mini_magick'
 gem 'carrierwave'
 gem 'soundcloud', "~> 0.2.9"
 
+gem "pagseguro-oficial", git: "git://github.com/pagseguro/ruby.git"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

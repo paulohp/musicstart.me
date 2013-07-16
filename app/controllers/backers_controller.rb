@@ -1,6 +1,5 @@
 # encoding: utf-8
 class BackersController < InheritedResources::Base
-  before_filter :authenticate_user!
 
   def index
     respond_to do |format|
@@ -24,7 +23,7 @@ class BackersController < InheritedResources::Base
     rewards = project.rewards.find(params[:backer][:reward_id])
 
     reward_value = params[:backer][:value]
-    
+
     payment = PagSeguro::PaymentRequest.new
     payment.reference = rewards.id
     payment.notification_url = notifications_url

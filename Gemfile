@@ -6,7 +6,7 @@ gem 'rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'sqlite3'
+
 gem 'devise'
 
 gem 'activeadmin'
@@ -33,7 +33,9 @@ gem 'soundcloud', "~> 0.2.9"
 gem "pagseguro-oficial", git: "git://github.com/pagseguro/ruby.git"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
+group :development do
+  gem 'sqlite3'
+end
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 

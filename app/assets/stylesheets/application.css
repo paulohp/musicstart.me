@@ -41,6 +41,10 @@
 }
 .location{
   background-position: -23px -70px;
+  float: left;
+}
+.project_location span{
+  float: left;
 }
 #projects{
   display:table;

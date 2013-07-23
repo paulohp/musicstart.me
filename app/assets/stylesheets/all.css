@@ -367,10 +367,6 @@ p{margin:0 0 21px;}
 	text-decoration:none;
 	background:#e7e7e7;
 }
-#nav > ul > li.active > a{
-	background:#F33CA4 !important;
-	color:#fff;
-}
 
 #nav ul ul{
 	width:273px;

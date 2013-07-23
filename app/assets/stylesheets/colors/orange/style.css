@@ -7,14 +7,6 @@ body{
 a{
 	color:#FF6D00;
 }
-#nav > ul > li.active > a{
-	background:#FF6D00 !important;
-	color:#fff;
-}
-#nav li li a:hover,
-#nav li li.active a{
-	background:#FF6D00;
-}
 .gallery .tp-leftarrow,
 .gallery .tp-rightarrow{
 	background:#FF6D00;

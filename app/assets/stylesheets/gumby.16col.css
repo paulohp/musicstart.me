@@ -204,7 +204,7 @@
   	ul.circle { list-style: circle outside; }
   	ul.disc { list-style: disc outside; }
   	ul ul, ol ol { margin: 4px 0 5px 30px; }
-  	li { margin-bottom: 12px; }
+  	li { margin-bottom: 0px; }
   	ul.large li { line-height: 21px; }
 
 
